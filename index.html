@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -228,7 +228,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/05/06/next-theme-setting/" class="post-title-link" itemprop="url">NexT 主题设置</a>
+            <a href="/2020/05/06/next-theme-setting/" class="post-title-link" itemprop="url">NexT 主题配置</a>
         </h2>
 
         <div class="post-meta">
@@ -237,10 +237,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-06 10:33:40 / Modified: 10:44:29" itemprop="dateCreated datePublished" datetime="2020-05-06T10:33:40+00:00">2020-05-06</time>
+              <time title="Created: 2020-05-06 10:33:40" itemprop="dateCreated datePublished" datetime="2020-05-06T10:33:40+00:00">2020-05-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-09 15:12:19" itemprop="dateModified" datetime="2020-05-09T15:12:19+00:00">2020-05-09</time>
+              </span>
 
           
 
@@ -253,8 +259,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="开启手机端侧边栏及GitHub图标链接"><a href="#开启手机端侧边栏及GitHub图标链接" class="headerlink" title="开启手机端侧边栏及GitHub图标链接"></a>开启手机端侧边栏及GitHub图标链接</h2><p>修改<code>themes/next/_config.yml</code>文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  # Enable sidebar on narrow view (only for Muse | Mist).</span><br><span class="line">  onmobile: true</span><br><span class="line"> </span><br><span class="line">back2top:</span><br><span class="line">  enable: true</span><br><span class="line">  # Back to top in sidebar.</span><br><span class="line">  sidebar: true</span><br><span class="line"></span><br><span class="line"># &#96;Follow me on GitHub&#96; banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;wjianbo</span><br><span class="line">  title: Follow me on GitHub</span><br></pre></td></tr></table></figure>
+          <h2 id="配置文件位置"><a href="#配置文件位置" class="headerlink" title="配置文件位置"></a>配置文件位置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">themes&#x2F;next&#x2F;_config.yml</span><br></pre></td></tr></table></figure>
+
+<h2 id="启用窄屏幕侧边栏"><a href="#启用窄屏幕侧边栏" class="headerlink" title="启用窄屏幕侧边栏"></a>启用窄屏幕侧边栏</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Enable sidebar on narrow view (only for Muse | Mist).</span><br><span class="line">onmobile: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="启用右上角-GitHub-猫咪链接"><a href="#启用右上角-GitHub-猫咪链接" class="headerlink" title="启用右上角 GitHub 猫咪链接"></a>启用右上角 GitHub 猫咪链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"># &#96;Follow me on GitHub&#96; banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;wjianbo</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改字体（全局宋体）"><a href="#修改字体（全局宋体）" class="headerlink" title="修改字体（全局宋体）"></a>修改字体（全局宋体）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # Uri of fonts host, e.g. https:&#x2F;&#x2F;fonts.googleapis.com (Default).</span><br><span class="line">  host:</span><br><span class="line"></span><br><span class="line">  # Font options:</span><br><span class="line">  # &#96;external: true&#96; will load this font family from &#96;host&#96; above.</span><br><span class="line">  # &#96;family: Times New Roman&#96;. Without any quotes.</span><br><span class="line">  # &#96;size: x.x&#96;. Use &#96;em&#96; as unit. Default: 1 (16px)</span><br><span class="line"></span><br><span class="line">  # Global font settings used for all elements inside &lt;body&gt;.</span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Noto Serif SC</span><br><span class="line">    size:</span><br></pre></td></tr></table></figure>
 
       
     </div>
