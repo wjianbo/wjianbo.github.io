@@ -113,14 +113,14 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-writing">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Writing</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-lists">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+    <a href="/lists" rel="section"><i class="fa fa-archive fa-fw"></i>Lists</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -245,7 +245,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-09 15:12:19" itemprop="dateModified" datetime="2020-05-09T15:12:19+00:00">2020-05-09</time>
+                <time title="Modified: 2020-05-09 15:51:28" itemprop="dateModified" datetime="2020-05-09T15:51:28+00:00">2020-05-09</time>
               </span>
 
           
@@ -263,7 +263,7 @@
 
 <h2 id="启用窄屏幕侧边栏"><a href="#启用窄屏幕侧边栏" class="headerlink" title="启用窄屏幕侧边栏"></a>启用窄屏幕侧边栏</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Enable sidebar on narrow view (only for Muse | Mist).</span><br><span class="line">onmobile: true</span><br></pre></td></tr></table></figure>
 
-<h2 id="启用右上角-GitHub-猫咪链接"><a href="#启用右上角-GitHub-猫咪链接" class="headerlink" title="启用右上角 GitHub 猫咪链接"></a>启用右上角 GitHub 猫咪链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"># &#96;Follow me on GitHub&#96; banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;wjianbo</span><br></pre></td></tr></table></figure>
+<h2 id="启用右上角-GitHub-猫咪链接"><a href="#启用右上角-GitHub-猫咪链接" class="headerlink" title="启用右上角 GitHub 猫咪链接"></a>启用右上角 GitHub 猫咪链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># &#96;Follow me on GitHub&#96; banner in the top-right corner.</span><br><span class="line">github_banner:</span><br><span class="line">  enable: true</span><br><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;wjianbo</span><br></pre></td></tr></table></figure>
 
 <h2 id="修改字体（全局宋体）"><a href="#修改字体（全局宋体）" class="headerlink" title="修改字体（全局宋体）"></a>修改字体（全局宋体）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # Uri of fonts host, e.g. https:&#x2F;&#x2F;fonts.googleapis.com (Default).</span><br><span class="line">  host:</span><br><span class="line"></span><br><span class="line">  # Font options:</span><br><span class="line">  # &#96;external: true&#96; will load this font family from &#96;host&#96; above.</span><br><span class="line">  # &#96;family: Times New Roman&#96;. Without any quotes.</span><br><span class="line">  # &#96;size: x.x&#96;. Use &#96;em&#96; as unit. Default: 1 (16px)</span><br><span class="line"></span><br><span class="line">  # Global font settings used for all elements inside &lt;body&gt;.</span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Noto Serif SC</span><br><span class="line">    size:</span><br></pre></td></tr></table></figure>
 
@@ -482,73 +482,6 @@
 <p>究竟智商有没有恢复，也没有办法测量，不过确实会蹦出一些想法，比如昨天晚上跑步的时候想到一个新名字（前两天刚刚无聊地把公众号的名字改成「一个练习簿」，比原来少了两个字）：「程叙园」——编程的程，叙述的叙，花园的园。</p>
 <p>另外，以后更文的形式或许可以稍微改一下，只是发翻译完的文章太单调了，可以考虑配图，哪怕图文无关。或者减少篇幅，日汉对照，最后再加一段 translator’s note，但不必是中规中矩的译者注，而是更随意一些，也许就是流水账。</p>
 <p>总之，可以说跑步是我的重要灵感来源之一（之二大概是洗澡）。你有什么灵感来源？欢迎留言分享。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/24/gakumonn/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jianbo Wang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="搏博波">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/24/gakumonn/" class="post-title-link" itemprop="url">福泽谕吉《劝学·第二篇》</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-03-24 14:03:54" itemprop="dateCreated datePublished" datetime="2020-03-24T14:03:54+00:00">2020-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-06 09:14:20" itemprop="dateModified" datetime="2020-05-06T09:14:20+00:00">2020-05-06</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>王健波 译</p>
-<h1 id="平等"><a href="#平等" class="headerlink" title="平等"></a>平等</h1><p>初篇开头写道：人人生而平等，无高下之别，自由自在云云。现在我想就此展开。人之出生，是上天使然，而非人力所致。之所以说人与人应该互敬互爱，各尽职守，互不相妨，是因为我们作为同类，共享一片天空，同为天地之间的造物。这就好比一个家庭里的兄弟姐妹和睦相处，是因为他们是在同一个家庭里，共享一父一母。</p>
-<p>因此，要问人和人的关系，毫无疑问是平等的。但是，这里所说的平等，并不是指外在条件上的平等，而是指权利道义上的平等。谈论外在条件时，我们会发现人和人之间有着很大的差距：贫富、强弱、智愚，大名华族住宫殿、衣美服、享美食，工人居陋巷、缺吃少穿，才智过人者可以做官、经商、改变世界，缺少智慧的人一生只能做小买卖，有强壮的相扑手，也有娇弱的公主，可以说是云泥之差。但是，如果从权利道义的角度来说，则是完全平等，没有一厘一毫的轻重。所谓的权利道义，就是要尊重每一个人的生命，保护每一个人的财产，珍视每一个人的名誉。既然上天赋予人生命，又赋予人身体和心灵，让人践行这一道理，那么无论如何，都不应该以人力去损害它。</p>
 
       
     </div>
@@ -903,6 +836,106 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/startBloggingWithHexoAndGithub/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jianbo Wang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="搏博波">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/14/startBloggingWithHexoAndGithub/" class="post-title-link" itemprop="url">Hexo+Github 搭建个人博客（Mac）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-14 07:54:22" itemprop="dateCreated datePublished" datetime="2020-01-14T07:54:22+00:00">2020-01-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-06 09:14:20" itemprop="dateModified" datetime="2020-05-06T09:14:20+00:00">2020-05-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>安装  <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 前需要先安装下列应用程序：</li>
+</ol>
+<ul>
+<li><a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a> </li>
+</ul>
+<ol start="2">
+<li>安装 Hexo<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>在 _config.yml 中修改配置。</p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><p>换成我比较喜欢的 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">next</a> 主题。</p>
+<ol>
+<li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li>修改配置文件（_config.yml） <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></li>
+<li>链接失效问题<br>问题描述：「首页」「归档」等链接失效，URL 地址最后面出现「%20」。<br>解决方法：去掉主题配置文件（theme/next/ _config.yml）里menu部分多余的空格，例如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">home: &#x2F; || home</span><br></pre></td></tr></table></figure>
+改为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">home: &#x2F;|| home</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>启动服务器。默认情况下，访问网址为：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol>
+<li>安装  <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git —save</span><br></pre></td></tr></table></figure></li>
+<li>修改配置（_config.yml） <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;&lt;你的 GitHub 用户名&gt;&#x2F;&lt;你的 GitHub 用户名&gt;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li>生成站点文件并推送至远程库。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考：<br><a href="https://blog.csdn.net/ainuser/article/details/77609180" target="_blank" rel="noopener">hexo+github 搭建个人博客(超详细教程)_AinUser 的博客-CSDN 博客</a><br><a href="https://github.com/hexojs/hexo/issues/3816" target="_blank" rel="noopener">404 问题 · Issue #3816 · hexojs/hexo · GitHub</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
   <nav class="pagination">
@@ -970,16 +1003,14 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">12</span>
+          <a href="/archives">
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-          
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
