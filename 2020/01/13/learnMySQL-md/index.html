@@ -28,7 +28,7 @@
 <meta property="og:description" content="2020年1月13日学習内容关系数据库概述 - 廖雪峰的官方网站 安装 mySQL从 MySQL 官方网站下载最新的 MySQL Community Server 版本：https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F; 运行 MySQLMac： 12cd &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin.&#x2F;mysql -u ro">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T19:59:37.000Z">
-<meta property="article:modified_time" content="2020-05-06T09:14:20.862Z">
+<meta property="article:modified_time" content="2020-05-10T03:55:32.420Z">
 <meta property="article:author" content="Jianbo Wang">
 <meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary">
@@ -189,7 +189,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-06 09:14:20" itemprop="dateModified" datetime="2020-05-06T09:14:20+00:00">2020-05-06</time>
+                <time title="Modified: 2020-05-10 03:55:32" itemprop="dateModified" datetime="2020-05-10T03:55:32+00:00">2020-05-10</time>
               </span>
 
           
@@ -207,11 +207,10 @@
 <h2 id="安装-mySQL"><a href="#安装-mySQL" class="headerlink" title="安装 mySQL"></a>安装 mySQL</h2><p>从 MySQL 官方网站下载最新的 MySQL Community Server 版本：<br><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/</a></p>
 <h2 id="运行-MySQL"><a href="#运行-MySQL" class="headerlink" title="运行 MySQL"></a>运行 MySQL</h2><p>Mac：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin</span><br><span class="line">.&#x2F;mysql -u root -p</span><br></pre></td></tr></table></figure>
-<p>mysql的可执行命令在/usr/local/mysql/bin目录下，而这个目录不在普通用户的环境路径下，因此每次执行时都需要输入完整路径，比较麻烦。因此需要将这个路径添加到环境变量中。首先我们需要创建一个 .bash_profile 文件（不要掉了文件名前面的 . 号），命令如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .bash_profile</span><br></pre></td></tr></table></figure>
-<p>创建完成后，用编辑器打开这个文件，添加下面的内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
-<p>保存后退出</p>
+
+<p>mysql的可执行命令在/usr/local/mysql/bin目录下，而这个目录不在普通用户的环境路径下，因此每次执行时都需要输入完整路径，比较麻烦。因此需要将这个路径添加到环境变量中。<br>在<code>~/.zshrc</code>文件中添加下面的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+
 <h2 id="准备数据"><a href="#准备数据" class="headerlink" title="准备数据"></a>准备数据</h2><p>下载 <a href="https://raw.githubusercontent.com/michaelliao/learn-sql/master/mysql/init-test-data.sql" target="_blank" rel="noopener">SQL 脚本</a>，在命令行运行：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -u root -p &lt; init-test-data.sql</span><br></pre></td></tr></table></figure>
 <p>就可以自动创建 test 数据库，并且在 test 数据库下创建 students 表和<br>classes 表，以及必要的初始化数据。</p>
@@ -290,6 +289,13 @@
 
           </div>
           
+    
+  
+  <div class="comments">
+  <script src="https://utteranc.es/client.js" repo="wjianbo/wjianbo.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>
+  </div>
+  
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -349,13 +355,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
