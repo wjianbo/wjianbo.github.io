@@ -69,7 +69,7 @@ body {
     font-family: Ysabeau, Optima-Regular, 'LXGW WenKai', PingFangTC-LIGHT, monospace;
     font-size: 1em;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 2;
     max-width: 64rem;
     margin: auto;
     padding: 1rem;
@@ -81,6 +81,7 @@ body {
 h1 {
     font-size: 1em;
     margin: 1rem 1rem 1rem 0;
+    padding: 6px;
     color: var(--bgColor);
     background-color: var(--metaColor);
     text-align: center;
