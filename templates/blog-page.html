@@ -42,8 +42,8 @@
 {% endblock content %}
 
 {% block footer %}
-<time datetime="{{ page.date }}">:: <span class="metaData">{{ page.date }}</span> ::</time>
 <p class="tagsData">
+<span class="metaData">{{ page.date }}</span>
 {% if page.taxonomies.tags %}
 {% for tag in page.taxonomies.tags %}
 <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>

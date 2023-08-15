@@ -276,7 +276,7 @@ textarea {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: flex-end
 }
 
