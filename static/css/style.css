@@ -123,12 +123,12 @@ ul {
     line-height: 1.45;
 }
 
-ul li::marker {
+ul li::before {
     content: '» ';
     color: var(--metaColor)
 }
 
-ul li:hover::marker {
+ul li:hover::before {
     content: '# ';
     font-weight: 700;
     color: var(--linkColor)
