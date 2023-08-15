@@ -43,10 +43,10 @@ twitter_card = true
 en = { name = "home", url = "/" }
 
 [[extra.header_nav]]
-en = { name = "about", url = "/about" }
-
-[[extra.header_nav]]
 en = { name = "journal", url = "/journal" }
 
 [[extra.header_nav]]
 en = { name = "blog", url = "/blog" }
+
+[[extra.header_nav]]
+en = { name = "tags", url = "/tags" }
