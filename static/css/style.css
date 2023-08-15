@@ -113,6 +113,7 @@ a {
 
 nav a {
     padding: 6px;
+    margin-inline-start: 6px;
 }
 
 a:focus,
