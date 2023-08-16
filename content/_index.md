@@ -16,6 +16,5 @@
 
 ## Keep in touch
 
-- Email: [jnb.wang@gmail.com](mailto:jnb.wang@gmail.com)
-- Code Repositories: [wjianbo@GitHub](https://github.com/wjianbo)
-- `@wjianbo` anywhere else.
+- Email: [zhangakira1992@gmail.com](mailto:zhangakira1992@gmail.com)
+- Code Repositories: [zhangakira@GitHub](https://github.com/zhangakira)
