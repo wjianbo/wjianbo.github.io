@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://wjianbo.github.io"
+base_url = "https://zhangakira.github.io"
 
 # The site title and description; used in feeds by default.
-title = "what a life"
+title = "Zhang Jing's Blog"
 description = ""
 
 theme = "anemone"
