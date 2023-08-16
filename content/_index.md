@@ -16,6 +16,12 @@
 - 📚 [翻译](./lists/translations)
 - 🎬 [看过的剧](./lists/series)
 
+
+## 那些与我有关的文字
+
+- [男孩、鼹鼠、狐狸和马](https://wjianbo.github.io/blog/the-boy-the-mole-the-fox-and-the-horse-2022/)
+- [手机](https://wjianbo.github.io/blog/smart-phone/) 
+- 
 ## Keep in touch
 
 - Email: [zhangakira1992@gmail.com](mailto:zhangakira1992@gmail.com)
