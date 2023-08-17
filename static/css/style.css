@@ -129,6 +129,11 @@ a:hover {
     color: var(--bgColor)
 }
 
+.selected {
+    font-weight: bold;
+    color: var(--metaColor)
+}
+
 ul {
     list-style: none;
     margin-top: .5rem;
