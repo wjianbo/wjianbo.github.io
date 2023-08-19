@@ -21,7 +21,8 @@
 
 - [男孩、鼹鼠、狐狸和马](https://wjianbo.github.io/blog/the-boy-the-mole-the-fox-and-the-horse-2022/)
 - [手机](https://wjianbo.github.io/blog/smart-phone/) 
-- 
+- [世界的一角](https://wjianbo.github.io/blog/a-corner-of-the-world/)
+
 ## Keep in touch
 
 - Email: [zhangakira1992@gmail.com](mailto:zhangakira1992@gmail.com)
