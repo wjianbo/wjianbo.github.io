@@ -7,5 +7,5 @@ apt-get install -y \
   zsh \
 
 ## install zola
-curl -sSL https://github.com/getzola/zola/releases/latest/download/zola-v0.14.0-x86_64-unknown-linux-gnu.tar.gz | tar xvz
+curl -sSL https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xvz
 sudo mv zola /usr/local/bin
