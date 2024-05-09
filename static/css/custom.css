@@ -1,7 +1,7 @@
 body {
-  font-family: "Linden Hill", "Alegreya", "Palatino Linotype",
-    "Book Antiqua", Palatino, Optima-Regular, "LXGW WenKai",
-    "source-han-serif-sc", PingFangTC-LIGHT, monospace;
+  font-family: "Linden Hill", "Alegreya", "Palatino Linotype", "Book Antiqua",
+    Palatino, Optima-Regular, "LXGW WenKai", "source-han-serif-sc",
+    PingFangTC-LIGHT, monospace;
 }
 
 nav a {
@@ -10,6 +10,26 @@ nav a {
   border-bottom: none;
 }
 
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+ul li::before {
+    content: '» ';
+    color: var(--metaColor)
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    font-family: Jost;
+    font-weight: lighter;
+    color: var(--dimGrey);
+}
 .navBar {
   margin-bottom: 1em;
   border-bottom: 1px solid;
