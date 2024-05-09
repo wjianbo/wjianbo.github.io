@@ -1,0 +1,23 @@
+body {
+  font-family: "Linden Hill", "Alegreya", "Palatino Linotype",
+    "Book Antiqua", Palatino, Optima-Regular, "LXGW WenKai",
+    "source-han-serif-sc", PingFangTC-LIGHT, monospace;
+}
+
+nav a {
+  padding: 5px;
+  margin-inline-start: 5px;
+  border-bottom: none;
+}
+
+.navBar {
+  margin-bottom: 1em;
+  border-bottom: 1px solid;
+  font-family: Jost, Optima, Candara, sans-serif;
+  text-transform: uppercase;
+}
+
+.selected {
+  border-bottom: 5px solid;
+  margin-bottom: -5px;
+}

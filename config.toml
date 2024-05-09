@@ -48,5 +48,3 @@ en = { name = "journal", url = "/journal" }
 [[extra.header_nav]]
 en = { name = "blog", url = "/blog" }
 
-[[extra.header_nav]]
-en = { name = "tags", url = "/tags" }
