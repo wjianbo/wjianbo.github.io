@@ -2,7 +2,7 @@
 base_url = "https://wjianbo.github.io"
 
 # The site title and description; used in feeds by default.
-title = "what a life"
+title = "Jianbo's Blog"
 description = ""
 
 theme = "anemone"
