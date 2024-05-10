@@ -2,6 +2,7 @@ body {
   font-family: "Linden Hill", "Alegreya", "Palatino Linotype", "Book Antiqua",
     Palatino, Optima-Regular, "LXGW WenKai", "source-han-serif-sc",
     PingFangTC-LIGHT, monospace;
+    line-height: 1.5;
 }
 
 nav a {
@@ -40,4 +41,36 @@ h6::before {
 .selected {
   border-bottom: 5px solid;
   margin-bottom: -5px;
+}
+
+time {
+    font-family: Jost;
+    font-weight: 400;
+}
+
+main .pagination {
+    clear: both;
+    font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+    margin:2rem 0
+}
+
+.next, .previous {
+    font-weight: 600;
+    transition:transform .3s ease-out
+}
+
+.next {
+    float:right
+}
+
+.next:hover {
+    transform:translateX(4px)
+}
+
+.previous {
+    float:left
+}
+
+.previous:hover {
+    transform:translateX(-4px)
 }
