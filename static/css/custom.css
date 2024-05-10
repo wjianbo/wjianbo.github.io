@@ -1,8 +1,17 @@
+:root {
+  --body-width: 992px;
+  --text-width: 620px;
+  --bg-body: white;
+  --bg-block: #f9f9f9;
+  --border-color: #ddd;
+  --box-shadow: 5px 5px 5px #eee;
+}
+
 body {
   font-family: "Linden Hill", "Alegreya", "Palatino Linotype", "Book Antiqua",
     Palatino, Optima-Regular, "LXGW WenKai", "source-han-serif-sc",
     PingFangTC-LIGHT, monospace;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 nav a {
@@ -16,9 +25,13 @@ a {
   border-bottom: 1px dashed;
 }
 
+article {
+  margin-left: 40px;
+}
+
 ul li::before {
-    content: '» ';
-    color: var(--metaColor)
+  content: "» ";
+  color: var(--metaColor);
 }
 
 h1::before,
@@ -27,9 +40,9 @@ h3::before,
 h4::before,
 h5::before,
 h6::before {
-    font-family: Jost;
-    font-weight: lighter;
-    color: var(--dimGrey);
+  font-family: Jost;
+  font-weight: lighter;
+  color: var(--dimGrey);
 }
 .navBar {
   margin-bottom: 1em;
@@ -44,33 +57,34 @@ h6::before {
 }
 
 time {
-    font-family: Jost;
-    font-weight: 400;
+  font-family: Jost;
+  font-weight: 400;
 }
 
 main .pagination {
-    clear: both;
-    font-family: Athelas, STHeiti, Microsoft Yahei, serif;
-    margin:2rem 0
+  clear: both;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  margin: 2rem 0;
 }
 
-.next, .previous {
-    font-weight: 600;
-    transition:transform .3s ease-out
+.next,
+.previous {
+  font-weight: 600;
+  transition: transform 0.3s ease-out;
 }
 
 .next {
-    float:right
+  float: right;
 }
 
 .next:hover {
-    transform:translateX(4px)
+  transform: translateX(4px);
 }
 
 .previous {
-    float:left
+  float: left;
 }
 
 .previous:hover {
-    transform:translateX(-4px)
+  transform: translateX(-4px);
 }

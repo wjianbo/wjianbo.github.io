@@ -14,14 +14,12 @@
 {% set pages = section.pages %}
 {% endif %}
 
-<ul class="titleList">
 {% for page in pages %}
-<article class="post">
   {{ post_macros::header(page=page) }}
+<article class="post">
   {{ post_macros::content(page=page) }}
 </article>
 {% endfor %}
-</ul>
 
 <nav class="pagination">
   {% if paginator.previous %}
