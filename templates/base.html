@@ -108,7 +108,7 @@
                {% set temp = get_url(path=current_nav_item.url, trailing_slash=true) %}
                {% if current_nav_item and current_nav_item.name %}
                <a href="{{ current_nav_item.url | safe }}" {% if current_nav_item.new_tab %}target="_blank" rel="noreferrer noopener"{% endif %}
-               {% if temp == url %}class="selected"{% endif %}>{{ current_nav_item.name }}</a>
+               {% if current_nav_item.url == current_path %}class="selected"{% endif %}>{{ current_nav_item.name ~ current_nav_item.url ~ current_path }}</a>
                {% endif %}
                {% endfor %}
             </nav>
