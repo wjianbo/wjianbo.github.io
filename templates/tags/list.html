@@ -5,7 +5,6 @@
 {% endblock header %}
 
 {% block content %}
-<h2>{{ taxonomy.name }}</h2>
 <p>
 {% for term in terms %}
 <a href="{{ term.permalink | safe }}">{{ term.name }}</a>[{{ term.pages | length }}]
