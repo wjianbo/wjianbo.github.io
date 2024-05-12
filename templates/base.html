@@ -94,6 +94,8 @@
       {% endif %}
       {% block css %}
       <link rel="stylesheet" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}"/>
+      <link rel="stylesheet" href="{{ get_url(path='css/fonts.css', trailing_slash=false) | safe }}"/>
+      <link rel="stylesheet" href="{{ get_url(path='css/custom.css', trailing_slash=false) | safe }}"/>
       {% endblock css %}
    </head>
    <body>
@@ -103,8 +105,10 @@
             <nav class="navBar">
                {% for nav_item in config.extra.header_nav %}
                {% set current_nav_item = nav_item[lang] %}
+               {% set temp = get_url(path=current_nav_item.url, trailing_slash=true) %}
                {% if current_nav_item and current_nav_item.name %}
-               <a href="{{ current_nav_item.url | safe }}" {% if current_nav_item.new_tab %}target="_blank" rel="noreferrer noopener"{% endif %}>{{ current_nav_item.name }}</a>
+               <a href="{{ current_nav_item.url | safe }}" {% if current_nav_item.new_tab %}target="_blank" rel="noreferrer noopener"{% endif %}
+               {% if temp == url %}class="selected"{% endif %}>{{ current_nav_item.name }}</a>
                {% endif %}
                {% endfor %}
             </nav>
@@ -114,23 +118,12 @@
          <main>
             {% block content %}{% endblock content %}
          </main>
-
-         <footer>
-            {% block footer %}{% endblock footer %}
-            <hr>
-            <div class=footContainer>
-               <div class="footLeft">
-                  <p>Licensed under <a target="_blank" rel="noopener noreferrer" href="https://fr.wikipedia.org/wiki/Licence_MIT">MIT</a><br>
-                     Built with <a target="_blank" rel="noopener noreferrer" href="https://www.getzola.org">Zola</a> using <a target="_blank" rel="noopener noreferrer" href="https://github.com/Speyll/anemone">anemone</a> theme &amp; <a target="_blank" rel="noopener noreferrer" href="https://github.com/Speyll/veqev">veqev</a> colors.<br>
-                  </p>
-               </div>
-               <div class="footRight">
-                  <!-- Size 46x46 -->
-                  <img class="footGif noStyle" loading="lazy" src="https://i.ibb.co/XYDpfcs/foot.gif" alt="footGif">
-                  <a class="metaData" target="_blank" rel="noopener noreferrer" href="{{ get_url(path="atom.xml", trailing_slash=false) }}" title="Subscribe via RSS for updates.">RSS</a>
-               </div>
-            </div>
-         </footer>
       </div>
+      <script>
+         (function(d) {
+           var config = {kitId: 'kwz5xar', scriptTimeout: 3000, async: true},
+           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+         })(document);
+      </script>
    </body>
 </html>
