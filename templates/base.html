@@ -1,3 +1,5 @@
+{% import "macros/menu.html" as menu_macros -%}
+
 <!doctype html>
 <html lang="{{ lang }}" class="light">
    <head>
@@ -102,16 +104,9 @@
       <div class="wrapper">
          <header>
             {% if config.extra.header_nav %}
-            <nav class="navBar">
-               {% for nav_item in config.extra.header_nav %}
-               {% set current_nav_item = nav_item[lang] %}
-               {% set temp = get_url(path=current_nav_item.url, trailing_slash=true) %}
-               {% if current_nav_item and current_nav_item.name %}
-               <a href="{{ current_nav_item.url | safe }}" {% if current_nav_item.new_tab %}target="_blank" rel="noreferrer noopener"{% endif %}
-               {% if current_nav_item.url ~ "/" == current_path %}class="selected"{% endif %}>{{ current_nav_item.name }}</a>
-               {% endif %}
-               {% endfor %}
-            </nav>
+               {% block header_menu %}
+               {{ menu_macros::menu(config=config, current_path=current_path) }}
+               {% endblock header_menu %}
             {% endif %}
          </header>
 

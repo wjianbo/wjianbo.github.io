@@ -11,17 +11,18 @@ body {
   font-family: "Linden Hill", "Alegreya", "Palatino Linotype", "Book Antiqua",
     Palatino, Optima-Regular, "source-han-serif-sc", monospace;
   line-height: 1.5;
+  letter-spacing: 1.2px;
 }
 
 nav a {
   padding: 5px;
-  margin-inline-start: 5px;
   border-bottom: none;
 }
 
 a {
   text-decoration: none;
   border-bottom: 1px dashed;
+  color: var(--fgColor)
 }
 
 article {
