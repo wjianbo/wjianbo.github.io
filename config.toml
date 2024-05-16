@@ -2,7 +2,7 @@
 base_url = "https://wjianbo.github.io"
 
 # The site title and description; used in feeds by default.
-title = "Jianbo's Blog"
+title = "蜗牛日常"
 description = ""
 
 theme = "anemone"
@@ -34,7 +34,7 @@ highlight_code = true
 # Put all your custom variables here
 
 # anemone
-favicon = "favicon.ico"
+favicon = "shell.png"
 image = ""
 list_pages = false
 twitter_card = true
