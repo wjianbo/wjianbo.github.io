@@ -1,0 +1,89 @@
+:root {
+  --body-width: 992px;
+  --text-width: 620px;
+  --bg-body: white;
+  --bg-block: #f9f9f9;
+  --border-color: #ddd;
+  --box-shadow: 5px 5px 5px #eee;
+}
+
+body {
+  font-family: "Linden Hill", "Alegreya", "Palatino Linotype", "Book Antiqua",
+    Palatino, Optima-Regular, "source-han-serif-sc", monospace;
+  line-height: 1.5;
+}
+
+nav a {
+  padding: 5px;
+  margin-inline-start: 5px;
+  border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+article {
+  margin-left: 1.5em;
+}
+
+ul li::before {
+  content: "» ";
+  color: var(--metaColor);
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  font-family: Jost;
+  font-weight: lighter;
+  color: var(--dimGrey);
+}
+.navBar {
+  margin-bottom: 1em;
+  border-bottom: 1px solid;
+  font-family: Jost, Optima, Candara, sans-serif;
+  text-transform: uppercase;
+}
+
+.selected {
+  border-bottom: 5px solid;
+  margin-bottom: -5px;
+}
+
+time {
+  font-family: Jost;
+  font-weight: 400;
+}
+
+main .pagination {
+  clear: both;
+  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+  margin: 2rem 0;
+}
+
+.next,
+.previous {
+  font-weight: 600;
+  transition: transform 0.3s ease-out;
+}
+
+.next {
+  float: right;
+}
+
+.next:hover {
+  transform: translateX(4px);
+}
+
+.previous {
+  float: left;
+}
+
+.previous:hover {
+  transform: translateX(-4px);
+}
