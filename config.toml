@@ -42,9 +42,9 @@ twitter_card = true
 [[extra.header_nav]]
 en = { name = "home", url = "/" }
 
-[[extra.header_nav]]
-en = { name = "journal", url = "/journal" }
-
-[[extra.header_nav]]
-en = { name = "blog", url = "/blog" }
+# [[extra.header_nav]]
+# en = { name = "journal", url = "/journal" }
+# 
+# [[extra.header_nav]]
+# en = { name = "blog", url = "/blog" }
 
