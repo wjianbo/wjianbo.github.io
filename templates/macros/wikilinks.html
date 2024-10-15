@@ -1,0 +1,21 @@
+{% macro render(section) %}
+{% set first_bracket = "[[" %}
+{% set last_bracket = "]]" %}
+
+{% set wikiregex = "\\[\\[([^/]+?)\\]\\]" %}
+
+{% set_global processed_content = section.content %}
+
+{% for wikilink in section.content | split(pat=first_bracket) | slice(start=1) %}
+{% set link_parts = wikilink | split(pat=last_bracket) %}
+{% if link_parts | length >= 1 %}
+{% set link_content = link_parts | first %}
+{% set link_content = link_content | replace(from="?", to="\\?") %}
+{% set wikilink_pattern = first_bracket ~ link_content ~ last_bracket %}
+{% set url = get_url(path="@/books/" ~ link_content ~ ".md") %}
+{% set link = "<a href=" ~ url ~ ">" ~ link_content ~ "</a>" %}
+{% set_global processed_content=processed_content | replace(from=wikilink_pattern, to=link) %}
+{% endif %}
+{% endfor %}
+{{ processed_content | safe }}
+{% endmacro %}
