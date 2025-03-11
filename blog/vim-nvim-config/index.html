@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>VIM&#x2F;NeoVIM配置</title>
+   
+   
+   
+   <meta name="title" content="VIM&#x2F;NeoVIM配置">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/vim-nvim-config/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="VIM&#x2F;NeoVIM配置">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/vim-nvim-config/">
+   
+   <meta property="twitter:title" content="VIM&#x2F;NeoVIM配置">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/vim-nvim-config/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>VIM&#x2F;NeoVIM配置</h2>
+
+
+
+
+<article>
+<p>等了很久的 DevTerm 终于到了。主要是想用它来当写作工具。说实话，用它打字并不令人愉快。至少需要一个适应阶段。它让我想起很多年前在电视里看过一个时尚人物访谈，虽然人名早已不记得了，只记得一点：那个时尚人物会自己给自己剪头发。他说：不便也是一种时尚。我的价值观，大概就是这样一点点拼凑起来的。</p>
+<p>东闯西撞地装好了输入法，装了 NeoVIM。装了Firge 字体、文泉驿正黑字体，看上去总算舒服了些。接下来又想折腾 VIM/NeoVIM 的配置。以下记录一下自己折腾的过程。</p>
+<h2 id="shu-ru-fa">输入法</h2>
+<p>想试一下用 VIM 插件实现的输入法。为什么呢？图个安静吧。ibus 的输入框还是太跳了。本来想尝试 zhcon 在纯命令行的模式下写作，可惜不知道为什么，进入 zhcon 之后屏幕就被旋转了 90 度。暂时还没找到解决方法。如果找到，我肯定第一时间放弃图形界面。在那之前，还需忍耐一下。</p>
+<h3 id="an-zhuang-zfvimim">安装 <a href="https://github.com/ZSaberLv0/ZFVimIM">ZFVimIM</a></h3>
+<p>安装 vim-plug</p>
+<p>Vim: macOS/Linux(UNIX)：</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+</span><span>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</span></code></pre>
+<p>NVim:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>sh -c &#39;curl -fLo &quot;${XDG_DATA_HOME:-$HOME/.local/share}&quot;/nvim/site/autoload/plug.vim --create-dirs \
+</span><span>       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;
+</span></code></pre>
+<p>vimrc 中添加 ZFVimIM 插件：</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>call plug#begin(&#39;~/.vim/plugged&#39;)
+</span><span>Plug &#39;ZSaberLv0/ZFVimIM&#39;
+</span><span>Plug &#39;ZSaberLv0/ZFVimJob&#39;
+</span><span>call plug#end()
+</span></code></pre>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
