@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>UiPath DataTable 操作</title>
+   
+   
+   
+   <meta name="title" content="UiPath DataTable 操作">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/uipath-datatable/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="UiPath DataTable 操作">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/uipath-datatable/">
+   
+   <meta property="twitter:title" content="UiPath DataTable 操作">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/uipath-datatable/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>UiPath DataTable 操作</h2>
+
+
+
+
+<article>
+<h2 id="shai-xuan">筛选</h2>
+<p>使用 Filter Data Table Activity 可以对 DataTable 的数据进行筛选。</p>
+<p>如果是通过 DataScraping 获取的 DataTable，因为数据类型都是 String，无法直接比较数值大小。</p>
+<p>解决方法：</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>aDataTable.Select(&quot;Convert([WIID],&#39;System.Int32&#39;)&lt;200000&quot;).CopyToDataTable
+</span></code></pre>
+<p>.CopyToDataTable 可以将 .Select 得到的 DataRow[] 复制到新 DataTable。</p>
+<p>参考： <a href="https://forum.uipath.com/t/filter-data-table-activity/76465">Filter Data Table Activity</a> </p>
+<h2 id="fu-zhi-datarow">复制 DataRow</h2>
+<p>.CopyToDataTable 只适用于 DataRow[]，如果要把单独一条 Datarow 复制到新的 DataTable，可尝试以下方法：</p>
+<ol>
+<li>use Build Datatabel Activity set output as dtO</li>
+<li>use Assign activity dtO=yourDatatable.Clone()</li>
+<li>use Add AddROW Activity.</li>
+<li>set ArrayROW in item.ItemArray(), Datatable=dtO</li>
+</ol>
+<p>参考：<a href="https://forum.uipath.com/t/copy-row-from-one-datatable-to-another/80/14">Copy Row from one DataTable to another - RPA Developers - UiPath Community Forum</a></p>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
