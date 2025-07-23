@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>用 GitHub Issues 写博客</title>
+   
+   
+   
+   <meta name="title" content="用 GitHub Issues 写博客">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/yong-github-issues-xie-bo-ke/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="用 GitHub Issues 写博客">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/yong-github-issues-xie-bo-ke/">
+   
+   <meta property="twitter:title" content="用 GitHub Issues 写博客">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/yong-github-issues-xie-bo-ke/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>用 GitHub Issues 写博客</h2>
+
+
+
+
+<article>
+<p>博客实现了自动部署，又纠结起写作工具。手机上喜欢用熊掌记，但是上传发布还是有些麻烦，想起很久以前看过的一篇博客文章：<a href="https://io-oi.me/tech/continuous-writing-with-github-issues/">使用 GitHub Issues 持续写作 | reuixiy</a> ，又借鉴了 <a href="https://github.com/yihong0618">yihong</a> 的<a href="https://github.com/yihong0618/gitblog">开源博客</a>，实现了如下的博客写作、更新流程：</p>
+<pre data-lang="mermaid" style="background-color:#2b303b;color:#c0c5ce;" class="language-mermaid "><code class="language-mermaid" data-lang="mermaid"><span>graph TD
+</span><span>A[用 issue 写作]
+</span><span>A --&gt; B[issue 内容添加至 blog 源码仓库]
+</span><span>B --&gt; C[自动生成静态文件并更新 blog 仓库]
+</span></code></pre>
+<p>今后我的博客内容及相关代码都会保存在这里：<a href="https://github.com/wjianbo/blog-data">GitHub - wjianbo/blog-data</a></p>
+<p>更多参考：<a href="https://zhuanlan.zhihu.com/p/403221054">使用 Github Action 自动部署 Hugo 博客 - 知乎</a></p>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
