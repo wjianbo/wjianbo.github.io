@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>Vim笔记</title>
+   
+   
+   
+   <meta name="title" content="Vim笔记">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/vimbi-ji/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="Vim笔记">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/vimbi-ji/">
+   
+   <meta property="twitter:title" content="Vim笔记">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/vimbi-ji/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>Vim笔记</h2>
+
+
+
+
+<article>
+<p>这里记录学习和使用 Vim/NeoVim 的笔记。</p>
+<hr />
+<h3 id="cong-jian-tie-ban-nian-tie-dao-neovim-shi-zhong-wen-luan-ma-mac">从剪贴板粘贴到 neovim 时中文乱码（Mac）</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>$ locale
+</span><span>LANG=&quot;en_US&quot;
+</span><span>LC_COLLATE=&quot;en_US.UTF-8&quot;
+</span><span>LC_CTYPE=&quot;en_US.UTF-8&quot;
+</span><span>LC_MESSAGES=&quot;en_US.UTF-8&quot;
+</span><span>LC_MONETARY=&quot;en_US.UTF-8&quot;
+</span><span>LC_NUMERIC=&quot;en_US.UTF-8&quot;
+</span><span>LC_TIME=&quot;en_US.UTF-8&quot;
+</span><span>LC_ALL=&quot;en_US.UTF-8&quot;
+</span></code></pre>
+<p>新建<code>~/.profile</code>文件，内容如下：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>export LANG=en_US.UTF-8
+</span></code></pre>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>$ source ~/.profile
+</span><span>$ locale
+</span><span style="color:#bf616a;">-LANG=&quot;en_US&quot;
+</span><span style="color:#a3be8c;">+LANG=&quot;en_US.UTF-8&quot;
+</span><span> LC_COLLATE=&quot;en_US.UTF-8&quot;
+</span><span> LC_CTYPE=&quot;en_US.UTF-8&quot;
+</span><span> LC_MESSAGES=&quot;en_US.UTF-8&quot;
+</span><span> LC_MONETARY=&quot;en_US.UTF-8&quot;
+</span><span> LC_NUMERIC=&quot;en_US.UTF-8&quot;
+</span><span> LC_TIME=&quot;en_US.UTF-8&quot;
+</span><span> LC_ALL=&quot;en_US.UTF-8&quot;
+</span></code></pre>
+<hr />
+<p>Use VIM mode within leetcode editor</p>
+<ul>
+<li>Exit insert mode: <code>CTRL + C</code></li>
+</ul>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
