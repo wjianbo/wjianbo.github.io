@@ -17,11 +17,33 @@
   font-family: kai sc;
   src: local('Kaiti'),local('Kaiti SC'),local('STKaiti'),local('楷体'),local('SimKai'),local('AR PL KaitiM GB'),local('DFKai-SB'),local('FandolKai'),url(https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2) format('woff2')
 }
+@font-face {
+  font-family: 'song sc';
+  src: local('Source Han Serif SC'),
+       local('思源宋体'),
+       local('Songti SC'),
+       local('STSong'),
+       local('SimSun'),
+       url('https://fonts.gstatic.com/s/sourcehanserifsc/v14/MQpSxiuwKecpYjY6zC3JSqZfZ7kB.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Heavy (900) */
+@font-face {
+  font-family: 'song sc';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Source Han Serif SC Heavy'),
+       local('思源宋体 Heavy'),
+       url('https://fonts.gstatic.com/s/sourcehanserifsc/v14/MQpSxiuwKecpYjY6zC3JSqZfZ7kB.woff2') format('woff2');
+  font-display: swap;
+}
+
 blockquote,.cn blockquote,.kai,.cn em,.cn .side,.hash-note,.hide-notes .toggle-notes {
   font-family: 'Linden Hill', palatino linotype,book antiqua,Palatino,kai sc,kai tc,serif
 }
 body {
-  font-family: 'Linden Hill', Palatino, serif;
+  font-family: 'Linden Hill', 'Songti SC', 'Times New Roman';
 }
 code {
   font-family: "Lucida Console", Monaco, monospace;
