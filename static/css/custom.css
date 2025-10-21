@@ -1,5 +1,5 @@
 body {
-  font-family: "Linden Hill", "song sc", "Palatino Linotype", "Book Antiqua",
+  font-family: "Linden Hill", "Noto Serif SC", "Palatino Linotype", "Book Antiqua",
     Palatino, Optima-Regular, "source-han-serif-sc", monospace;
   line-height: 1.5;
 }
@@ -10,7 +10,7 @@ h3::before,
 h4::before,
 h5::before,
 h6::before {
-  font-family: Jost, 'song sc';
+  font-family: 'Noto Serif SC', serif;
   font-weight: heavy;
   color: var(--dimGrey);
 }
@@ -24,12 +24,6 @@ h6::before {
 time {
   font-family: Jost;
   font-weight: 400;
-}
-
-main .pagination {
-  clear: both;
-  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
-  margin: 2rem 0;
 }
 
 .next,

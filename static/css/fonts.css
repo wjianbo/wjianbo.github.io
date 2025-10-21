@@ -1,14 +1,4 @@
 @font-face {
-  font-family: 'Linden Hill';
-  font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/theleagueof/linden-hill/webfonts/LindenHill-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'Linden Hill';
-  font-style: italic;
-  src: url('https://cdn.jsdelivr.net/gh/theleagueof/linden-hill/webfonts/LindenHill-Italic-webfont.woff') format('woff');
-}
-@font-face {
   font-family: 'Jost';
   font-style: normal;
   src: url('https://fonts.cdnfonts.com/s/21656/Jost400Book.woff') format('woff');
@@ -17,28 +7,6 @@
   font-family: kai sc;
   src: local('Kaiti'),local('Kaiti SC'),local('STKaiti'),local('楷体'),local('SimKai'),local('AR PL KaitiM GB'),local('DFKai-SB'),local('FandolKai'),url(https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2) format('woff2')
 }
-@font-face {
-  font-family: 'song sc';
-  src: local('Source Han Serif SC'),
-       local('思源宋体'),
-       local('Songti SC'),
-       local('STSong'),
-       local('SimSun'),
-       url('https://fonts.gstatic.com/s/sourcehanserifsc/v14/MQpSxiuwKecpYjY6zC3JSqZfZ7kB.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* Heavy (900) */
-@font-face {
-  font-family: 'song sc';
-  font-weight: 900;
-  font-style: normal;
-  src: local('Source Han Serif SC Heavy'),
-       local('思源宋体 Heavy'),
-       url('https://fonts.gstatic.com/s/sourcehanserifsc/v14/MQpSxiuwKecpYjY6zC3JSqZfZ7kB.woff2') format('woff2');
-  font-display: swap;
-}
-
 blockquote,.cn blockquote,.kai,.cn em,.cn .side,.hash-note,.hide-notes .toggle-notes {
   font-family: 'Linden Hill', palatino linotype,book antiqua,Palatino,kai sc,kai tc,serif
 }

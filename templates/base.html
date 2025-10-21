@@ -95,6 +95,9 @@
    {% endblock feed %}
    {% endif %}
    {% block css %}
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@200..900&display=swap');
+   </style>
    <link rel="stylesheet" href="{{ get_url(path='css/fonts.css', trailing_slash=false) | safe }}" />
    <link rel="stylesheet" href="{{ get_url(path='css/custom.css', trailing_slash=false) | safe }}" />
    <link rel="stylesheet" href="{{ get_url(path='css/blog.css', trailing_slash=false) | safe }}" />
