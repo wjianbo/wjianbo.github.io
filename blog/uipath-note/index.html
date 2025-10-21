@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>UiPath 学习笔记</title>
+   
+   
+   
+   <meta name="title" content="UiPath 学习笔记">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/uipath-note/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="UiPath 学习笔记">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/uipath-note/">
+   
+   <meta property="twitter:title" content="UiPath 学习笔记">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/uipath-note/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@200..900&display=swap');
+   </style>
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>UiPath 学习笔记</h2>
+
+
+
+
+<article>
+<p>完成了 Level 3 最后一个任务。</p>
+<p>尝试把项目发布到 Ochestrator，可以正常运行。</p>
+<p>以下是遇到的一些问题及解决方法：</p>
+<p><strong>一、开始 Job 时报错</strong></p>
+<p>解决方法：更新 Robot 说明中的密码</p>
+<p>参考：<a href="https://forum.uipath.com/t/job-failed-when-trying-to-run-manually/152883">Job failed when trying to run manually - RPA Developers - UiPath Community Forum</a></p>
+<p><strong>二、Type Into (Simulate Type) 触发输入法</strong></p>
+<p>解决方法：勾选 TypeInto 的 sendwindowsMessage 选项</p>
+<p>参考：<a href="https://www.jianshu.com/p/800e58d9bf0f">【UiPath 问题 20 】如何解决输入法问题？ - 简书</a></p>
+<p><strong>三、另存文件时输入路径 + 文件名并勾选「Simulate Type」导致另存失败（以原文件名保存在当前路径）</strong></p>
+<p>解决方法：取消勾选「Simulate Type」</p>
+<p><strong>四、On element appear 超时报错</strong></p>
+<p>解决方法：RepeatForever 设为 false</p>
+<p><strong>五、提取字符串中介于两个指定 index 之间的字符</strong></p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>stringObject.substring(start,stop)
+</span></code></pre>
+<p><strong>六、选中下拉菜单/下拉列表中文字的方法</strong></p>
+<p>第一种：Click + Click （F2 开始 3 秒倒计时）</p>
+<p>第二种：用「Select item」Activity 实现</p>
+<p><a href="https://www.jianshu.com/p/b708029603d9">UiPath认证L3(Level3)详解Calculate Client Security Hash—2 - 简书</a></p>
+<p><strong>七、在 Selector 中使用变量的方法</strong></p>
+<p>只能在属性面板中进行修改</p>
+<p><a href="https://www.cnblogs.com/TeresaMu/p/9871718.html">UiPath Level 1-Lesson 6. Selectors - 韭菜也是有尊严的 - 博客园</a></p>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
