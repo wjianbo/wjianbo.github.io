@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="robots" content="index, follow">
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <title>在中文和英文、数字之间快速添加空格</title>
+   
+   
+   
+   <meta name="title" content="在中文和英文、数字之间快速添加空格">
+   
+   
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://wjianbo.github.io/blog/insert-space-between-chinese-charactors-and-english/">
+   
+   <meta property="og:site_name" content="蜗牛日常">
+   
+   
+   <meta property="og:title" content="在中文和英文、数字之间快速添加空格">
+   
+   
+   
+   <meta property="og:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://wjianbo.github.io/blog/insert-space-between-chinese-charactors-and-english/">
+   
+   <meta property="twitter:title" content="在中文和英文、数字之间快速添加空格">
+   
+   
+   
+   <meta property="twitter:image" content="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;shell.png">
+   
+   
+   <link rel="canonical" href="https://wjianbo.github.io/blog/insert-space-between-chinese-charactors-and-english/">
+   
+   <link rel="shortcut icon" type="image/x-icon" href="https://wjianbo.github.io/shell.png">
+   
+   
+   
+   
+   <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/ atom.xml">
+   
+   
+   
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@200..900&display=swap');
+   </style>
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/fonts.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/custom.css" />
+   <link rel="stylesheet" href="https://wjianbo.github.io/css/blog.css" />
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-48ZQ58E4M9"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag() { dataLayer.push(arguments); }
+   gtag('js', new Date());
+
+   gtag('config', 'G-48ZQ58E4M9');
+</script>
+
+<body class="prose sm:px-20 px-2 pb-20">
+   <div class="wrapper">
+      <header>
+         
+         <nav class="navBar">
+            
+            
+            
+            
+            <a href="/"  >home</a>
+            
+            
+         </nav>
+         
+      </header>
+
+      <main>
+         
+
+<h2>在中文和英文、数字之间快速添加空格</h2>
+
+
+
+
+<article>
+<p>中文和数字、英文之间有一个空格会更美观。可以利用 vscode 的查找/替换功能实现。
+想要搜索任意中文和数字或英文字母的组合，需要用到以下正则表达式，并启动正则匹配搜索模式：</p>
+<ul>
+<li>中文在左，数字或英文字母在右：<code>([\u4e00-\u9fa5]+)([\da-zA-Z]+)</code></li>
+<li>数字或英文字母在左，中文在右：<code>([\da-zA-Z]+)([\u4e00-\u9fa5]+)</code></li>
+</ul>
+<p>然后 replace 行填写「$1 $2」 用于定义格式。</p>
+<hr />
+<p>参考：<a href="https://blog.csdn.net/qiaoanlu/article/details/103282569">如何批量添加中文和英文数字之间的空格？用正则表达式吧_Hello,World.-CSDN 博客</a></p>
+
+</article>
+
+      </main>
+   </div>
+   <script>
+      (function (d) {
+         var config = { kitId: 'kwz5xar', scriptTimeout: 3000, async: true },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+   </script>
+</body>
+
+</html>
