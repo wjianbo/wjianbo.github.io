@@ -5,7 +5,7 @@ base_url = "https://wjianbo.github.io"
 title = "蜗牛日常"
 description = ""
 
-theme = "anemone"
+theme = "monochrome"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -33,11 +33,9 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 
-# anemone
-favicon = "shell.png"
-image = ""
-list_pages = false
-twitter_card = true
+# monochrome
+
+lang = "zh-CN"
 
 [[extra.header_nav]]
 en = { name = "home", url = "/" }
