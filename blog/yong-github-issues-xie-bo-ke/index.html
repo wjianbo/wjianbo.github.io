@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>
+  用 GitHub Issues 写博客
+</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@200..800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://wjianbo.github.io/font.css">
+      
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+        <main class="content container px-2 pb-20">
+            
+  <a href="/">Home</a>
+  
+  
+  <h1 class="pt-6">用 GitHub Issues 写博客</h1>
+  
+  
+  <p>2022-03-07T00:42:13</h1>
+  
+  <p>博客实现了自动部署，又纠结起写作工具。手机上喜欢用熊掌记，但是上传发布还是有些麻烦，想起很久以前看过的一篇博客文章：<a href="https://io-oi.me/tech/continuous-writing-with-github-issues/">使用 GitHub Issues 持续写作 | reuixiy</a> ，又借鉴了 <a href="https://github.com/yihong0618">yihong</a> 的<a href="https://github.com/yihong0618/gitblog">开源博客</a>，实现了如下的博客写作、更新流程：</p>
+<pre data-lang="mermaid" style="background-color:#2b303b;color:#c0c5ce;" class="language-mermaid "><code class="language-mermaid" data-lang="mermaid"><span>graph TD
+</span><span>A[用 issue 写作]
+</span><span>A --&gt; B[issue 内容添加至 blog 源码仓库]
+</span><span>B --&gt; C[自动生成静态文件并更新 blog 仓库]
+</span></code></pre>
+<p>今后我的博客内容及相关代码都会保存在这里：<a href="https://github.com/wjianbo/blog-data">GitHub - wjianbo/blog-data</a></p>
+<p>更多参考：<a href="https://zhuanlan.zhihu.com/p/403221054">使用 Github Action 自动部署 Hugo 博客 - 知乎</a></p>
+
+
+               </main>
+
+    </body>
+
+</html>

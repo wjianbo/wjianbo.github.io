@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>
+  Vim笔记
+</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@200..800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://wjianbo.github.io/font.css">
+      
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://wjianbo.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+        <main class="content container px-2 pb-20">
+            
+  <a href="/">Home</a>
+  
+  
+  <h1 class="pt-6">Vim笔记</h1>
+  
+  
+  <p>2022-03-07T02:42:17</h1>
+  
+  <p>这里记录学习和使用 Vim/NeoVim 的笔记。</p>
+<hr />
+<h3 id="cong-jian-tie-ban-nian-tie-dao-neovim-shi-zhong-wen-luan-ma-mac">从剪贴板粘贴到 neovim 时中文乱码（Mac）</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>$ locale
+</span><span>LANG=&quot;en_US&quot;
+</span><span>LC_COLLATE=&quot;en_US.UTF-8&quot;
+</span><span>LC_CTYPE=&quot;en_US.UTF-8&quot;
+</span><span>LC_MESSAGES=&quot;en_US.UTF-8&quot;
+</span><span>LC_MONETARY=&quot;en_US.UTF-8&quot;
+</span><span>LC_NUMERIC=&quot;en_US.UTF-8&quot;
+</span><span>LC_TIME=&quot;en_US.UTF-8&quot;
+</span><span>LC_ALL=&quot;en_US.UTF-8&quot;
+</span></code></pre>
+<p>新建<code>~/.profile</code>文件，内容如下：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>export LANG=en_US.UTF-8
+</span></code></pre>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>$ source ~/.profile
+</span><span>$ locale
+</span><span style="color:#bf616a;">-LANG=&quot;en_US&quot;
+</span><span style="color:#a3be8c;">+LANG=&quot;en_US.UTF-8&quot;
+</span><span> LC_COLLATE=&quot;en_US.UTF-8&quot;
+</span><span> LC_CTYPE=&quot;en_US.UTF-8&quot;
+</span><span> LC_MESSAGES=&quot;en_US.UTF-8&quot;
+</span><span> LC_MONETARY=&quot;en_US.UTF-8&quot;
+</span><span> LC_NUMERIC=&quot;en_US.UTF-8&quot;
+</span><span> LC_TIME=&quot;en_US.UTF-8&quot;
+</span><span> LC_ALL=&quot;en_US.UTF-8&quot;
+</span></code></pre>
+<hr />
+<p>Use VIM mode within leetcode editor</p>
+<ul>
+<li>Exit insert mode: <code>CTRL + C</code></li>
+</ul>
+
+
+               </main>
+
+    </body>
+
+</html>
