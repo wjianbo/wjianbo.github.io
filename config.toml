@@ -4,6 +4,7 @@ base_url = "https://wjianbo.github.io"
 # The site title and description; used in feeds by default.
 title = "蜗牛日常"
 description = ""
+author = "王健波"
 
 theme = "monochrome"
 
