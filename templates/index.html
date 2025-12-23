@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+{# 1. 从 index.md 读取配置 #}
+{% set section_path = section.extra.recent_section | default(value="posts") %}
+{% set limit = section.extra.recent_limit | default(value=5) %}
+
+{# 2. 获取目标 section #}
+{% set recent = get_section(path=section_path ~ "/_index.md") %}
+
+{# 3. 处理内容插槽 #}
+{% set content = section.content | safe %}
+{% set parts = content | split(pat="<!-- POSTS -->") %}
+
+{% if parts | length > 1 %}
+
+{{ parts[0] | safe }}
+
+<ul class="post-list">
+  {% for post in recent.pages | reverse | slice(start=0, end=limit) %}
+  <li>
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+    <span class="post-date">{{ post.date }}</span>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if section.extra.recent_section %}
+<p class="section-link">
+  <a href="/{{ section.extra.recent_section }}/">→</a>
+</p>
+{% endif %}
+
+
+{{ parts[1] | safe }}
+
+{% else %}
+
+{{ content | safe }}
+
+{% endif %}
+
+{% endblock content %}
