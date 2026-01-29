@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section class="daily-quote-embed">
+  <iframe
+    src="https://wjianbo.github.io/aozorabunko/"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    scrolling="no"
+  ></iframe>
+</section>
+
 {# 1. 从 index.md 读取配置 #}
 {% set section_path = section.extra.recent_section | default(value="posts") %}
 {% set limit = section.extra.recent_limit | default(value=5) %}

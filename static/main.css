@@ -1,5 +1,5 @@
 :root {
-  --bg: #ffffff;
+  --bg: #f7f7f7;
   --text: #111111;
   --muted: #777777;
   --border: #e5e5e5;
@@ -102,7 +102,7 @@ ul li {
 }
 
 ul li::marker {
-  color: var(--bullets);
+  color: lightgray;
 }
 
 ::marker {
@@ -252,4 +252,18 @@ pre {
   color: #999;
   text-decoration: none;
   border-bottom: none;
+}
+
+.daily-quote-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.daily-quote-embed iframe {
+  width: 100%;
+  height: 320px;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
