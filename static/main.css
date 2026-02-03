@@ -254,16 +254,38 @@ pre {
   border-bottom: none;
 }
 
-.daily-quote-embed {
-  display: flex;
-  justify-content: center;
+.daily-quote {
+  margin: 2.5rem 0 3rem;
 }
 
-.daily-quote-embed iframe {
-  width: 100%;
-  height: 320px;
+.daily-quote-card {
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--color-border, #ddd);
+  background: rgba(0, 0, 0, 0.02);
+}
 
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+@media (prefers-color-scheme: dark) {
+  .daily-quote-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-left-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.daily-quote-text {
+  margin: 0 0 0.5rem;
+  line-height: 1.8;
+}
+
+.daily-quote-meta {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.7;
+  text-align: right;
+}
+
+.daily-quote-label {
+  font-size: 0.8em;
+  opacity: 0.6;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.08em;
 }

@@ -1,14 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="daily-quote-embed">
-  <iframe
-    src="https://wjianbo.github.io/aozorabunko/"
-    loading="lazy"
-    referrerpolicy="no-referrer"
-    scrolling="no"
-  ></iframe>
+<section class="daily-quote">
+  <p class="daily-quote-label">今日の一句</p>
+  <div class="daily-quote-card">
+    <p class="daily-quote-text" id="quote-text">加载中…</p>
+    <p class="daily-quote-meta" id="quote-meta"></p>
+  </div>
 </section>
+
+<script>
+fetch("https://wjianbo.github.io/aozorabunko/daily.json")
+  .then(r => r.json())
+  .then(data => {
+    const q = data.quote;
+
+    // 如果你有 normalizeAozoraText，这里可以接上
+    document.getElementById("quote-text").innerHTML = q.text;
+    document.getElementById("quote-meta").textContent =
+      `${q.author}《${q.title}》`;
+  })
+  .catch(() => {
+    document.getElementById("quote-text").textContent = "今日一句加载失败。";
+  });
+</script>
 
 {# 1. 从 index.md 读取配置 #}
 {% set section_path = section.extra.recent_section | default(value="posts") %}
