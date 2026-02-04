@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ get_url(path="library-font.css", trailing_slash=false) }}">
+{% endblock extra_head %}
+
 {% block content %}
 <main class="library library-page paper-mode">
     <article class="paper">
@@ -14,7 +19,9 @@
         </header>
 
         <div class="paper-body">
-            {{ page.content | safe }}
+            <div class="library-reading">
+                {{ page.content | safe }}
+            </div>
         </div>
 
         <footer class="paper-footer">

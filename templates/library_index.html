@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ get_url(path="library-font.css", trailing_slash=false) }}">
+{% endblock extra_head %}
+
 {% block content %}
-<main class="library library-index">
+<main class="library library-index library-reading">
   <h1>{{ section.title }}</h1>
 
   <ul class="library-list">
