@@ -1,6 +1,6 @@
 /* Site-level custom styles (kept outside theme for easy maintenance) */
 :root {
-  --font-serif-cn: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", serif;
+  --font-serif-cn: "Noto Serif SC", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", serif;
 }
 
 html,
