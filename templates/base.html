@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ config.extra.lang | default(value="en") }}">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path="custom.css", trailing_slash=false) }}">
+
+    {% if config.generate_feeds %}
+      {% set feed_file = config.feed_filenames | first | default(value="atom.xml") %}
+      <link
+        rel="alternate"
+        type="{% if feed_file == "atom.xml" %}application/atom+xml{% else %}application/rss+xml{% endif %}"
+        title="RSS"
+        href="{{ get_url(path=feed_file) | safe }}"
+      >
+    {% endif %}
+
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      {% block content %}
+        <div class="posts">
+          {% for page in section.pages | reverse %}
+            <div class="post">
+              <h1 class="post-title">
+                <a href="{{ page.permalink }}">{{ page.title | safe }}</a>
+              </h1>
+              <span class="post-date">
+                {{ page.date | date(format="%Y-%m-%d") }}
+              </span>
+            </div>
+          {% endfor %}
+        </div>
+      {% endblock content %}
+    </main>
+  </body>
+</html>

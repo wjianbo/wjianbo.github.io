@@ -1,0 +1,14 @@
+/* Site-level custom styles (kept outside theme for easy maintenance) */
+:root {
+  --font-serif-cn: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", serif;
+}
+
+html,
+body {
+  font-family: var(--font-serif-cn);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif-cn);
+  font-weight: 600;
+}
