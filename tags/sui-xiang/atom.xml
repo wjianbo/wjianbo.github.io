@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>蜗牛日常 - 随想</title>
+    <link rel="self" type="application/atom+xml" href="https://wjianbo.github.io/tags/sui-xiang/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://wjianbo.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-09-18T00:00:00+00:00</updated>
+    <id>https://wjianbo.github.io/tags/sui-xiang/atom.xml</id>
+    <entry xml:lang="en">
+        <title>世界的一角</title>
+        <published>2021-09-18T00:00:00+00:00</published>
+        <updated>2021-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              王健波
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wjianbo.github.io/archive/2021/a-corner-of-the-world/"/>
+        <id>https://wjianbo.github.io/archive/2021/a-corner-of-the-world/</id>
+        
+        <content type="html" xml:base="https://wjianbo.github.io/archive/2021/a-corner-of-the-world/">&lt;p&gt;释迦牟尼在菩提树下打坐四十九天，开悟后说：奇哉，奇哉，一切众生皆有如来智慧德相，乃因妄想执着而不能证得。&lt;&#x2F;p&gt;
+&lt;p&gt;但在众生看来，释迦牟尼这话也是凡尔赛。&lt;&#x2F;p&gt;
+&lt;p&gt;就好像晶问我怎样才能少看手机，我说只要把手机放下就行了。&lt;&#x2F;p&gt;
+&lt;p&gt;这或许可以说是成功学的悖论。&lt;&#x2F;p&gt;
+&lt;p&gt;成功前，他的话没有人听，因为不具有说服力。&lt;&#x2F;p&gt;
+&lt;p&gt;成功后，他就成了个例，因而也不具有说服力。&lt;&#x2F;p&gt;
+&lt;p&gt;我的想法是，每个人都应该成为个例。&lt;&#x2F;p&gt;
+&lt;p&gt;每个人都是世界的一角。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
