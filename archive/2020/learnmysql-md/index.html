@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">SQL 学习笔记</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <p>2020年1月13日学習内容
+<a rel="external" href="https://www.liaoxuefeng.com/wiki/1177760294764384/1179613436834240">关系数据库概述 - 廖雪峰的官方网站</a></p>
+<h2 id="an-zhuang-mysql">安装 mySQL</h2>
+<p>从 MySQL 官方网站下载最新的 MySQL Community Server 版本：
+https://dev.mysql.com/downloads/mysql/</p>
+<h2 id="yun-xing-mysql">运行 MySQL</h2>
+<p>Mac：</p>
+<pre><code>cd /usr/local/mysql/bin
+./mysql -u root -p
+</code></pre>
+<p>mysql的可执行命令在/usr/local/mysql/bin目录下，而这个目录不在普通用户的环境路径下，因此每次执行时都需要输入完整路径，比较麻烦。因此需要将这个路径添加到环境变量中。首先我们需要创建一个 .bash_profile 文件（不要掉了文件名前面的 . 号），命令如下：</p>
+<pre><code>touch .bash_profile
+</code></pre>
+<p>创建完成后，用编辑器打开这个文件，添加下面的内容：</p>
+<pre><code>export PATH=/usr/local/mysql/bin:$PATH
+</code></pre>
+<p>保存后退出</p>
+<h2 id="zhun-bei-shu-ju">准备数据</h2>
+<p>下载 <a rel="external" href="https://raw.githubusercontent.com/michaelliao/learn-sql/master/mysql/init-test-data.sql">SQL 脚本</a>，在命令行运行：</p>
+<pre><code>$ mysql -u root -p &lt; init-test-data.sql
+</code></pre>
+<p>就可以自动创建 test 数据库，并且在 test 数据库下创建 students 表和
+classes 表，以及必要的初始化数据。</p>
+<h2 id="shi-yong-shu-ju-ku">使用数据库</h2>
+<pre><code>mysql&gt; USE test;
+</code></pre>
+<h2 id="ji-ben-cha-xun">基本查询</h2>
+<pre><code>SELECT * FROM &lt;表名&gt;
+</code></pre>
+<h2 id="tiao-jian-cha-xun">条件查询</h2>
+<pre><code>SELECT * FROM &lt;表名&gt; WHERE &lt;条件表达式&gt;
+SELECT * FROM &lt;表名&gt; WHERE &lt;条件1&gt; AND/OR &lt;条件2&gt;
+SELECT * FROM &lt;表名&gt; WHERE NOT &lt;条件&gt;
+SELECT * FROM &lt;表名&gt; WHERE score BETWEEN 60 AND 90
+</code></pre>
+<p>要组合三个或者更多的条件，就需要用小括号()表示如何进行条件运算。
+如果不加括号，条件运算按照 NOT、AND、OR 的优先级进行。</p>
+<h2 id="tou-ying-cha-xun">投影查询</h2>
+<pre><code>SELECT 列1, 列2, 列3 FROM …
+SELECT 列1 别名1, 列2 别名2, 列3 别名3 FROM …
+</code></pre>
+<h2 id="pai-xu">排序</h2>
+<pre><code>SELECT id, name, gender, score FROM students ORDER BY score (DESC);
+</code></pre>
+<h2 id="fen-ye-cha-xun">分页查询</h2>
+<pre><code>LIMIT &lt;M&gt; OFFSET &lt;N&gt;
+</code></pre>
+<p>在 MySQL 中，</p>
+<pre><code>LIMIT 15 OFFSET 30
+</code></pre>
+<p>还可以简写成</p>
+<pre><code>LIMIT 30, 15
+</code></pre>
+<h2 id="ju-he-cha-xun">聚合查询</h2>
+<pre><code>SELECT COUNT(*) num FROM &lt;表名&gt;
+</code></pre>
+<p>除了 COUNT() 函数外，SQL 还提供了如下聚合函数：</p>
+<ul>
+<li>SUM
+计算某一列的合计值，该列必须为数值类型</li>
+<li>AVG
+计算某一列的平均值，该列必须为数值类型</li>
+<li>MAX
+计算某一列的最大值</li>
+<li>MIN
+计算某一列的最小值</li>
+</ul>
+<p>通过聚合查询获得总页数：</p>
+<pre><code> SELECT CEILING(COUNT(*) / 3) FROM students;
+</code></pre>
+<h3 id="fen-zu">分组</h3>
+<pre><code>SELECT class_id, COUNT(*) num FROM students GROUP BY class_id;
+SELECT class_id, gender, COUNT(*) num FROM students GROUP BY class_id, gender;
+</code></pre>
+<h2 id="duo-biao-cha-xun">多表查询</h2>
+<pre><code>SELECT
+    s.id sid,
+    s.name,
+    s.gender,
+    s.score,
+    c.id cid,
+    c.name cname
+FROM students s, classes c
+WHERE s.gender = &#39;M&#39; AND c.id = 1;
+</code></pre>
+<h2 id="lian-jie-cha-xun">连接查询</h2>
+<pre><code>SELECT s.id, s.name, s.class_id, c.name class_name, s.gender, s.score
+FROM students s
+INNER JOIN classes c
+ON s.class_id = c.id;
+</code></pre>
+<p>注意 INNER JOIN 查询的写法是：</p>
+<ul>
+<li>先确定主表，仍然使用 FROM &lt;表1&gt; 的语法；</li>
+<li>再确定需要连接的表，使用 INNER JOIN &lt;表2&gt; 的语法；</li>
+<li>然后确定连接条件，使用 ON &lt;条件…&gt;，这里的条件是 s.class_id = c.id，表示 students 表的 class_id 列与 classes 表的 id 列相同的行需要连接；</li>
+<li>可选：加上 WHERE 子句、ORDER BY 等子句。</li>
+</ul>
+<p>INNER JOIN、RIGHT OUTER JOIN、LEFT OUTER JOIN、FULL OUTER JOIN 的区别：</p>
+<ul>
+<li>INNER JOIN 只返回同时存在于两张表的行数据，由于 students 表的 class_id 包含 1，2，3，classes 表的 id 包含 1，2，3，4，所以，INNER JOIN 根据条件 s.class_id = c.id 返回的结果集仅包含 1，2，3。</li>
+<li>RIGHT OUTER JOIN 返回右表都存在的行。如果某一行仅在右表存在，那么结果集就会以 NULL 填充剩下的字段。</li>
+<li>LEFT OUTER JOIN 则返回左表都存在的行。</li>
+<li>FULL OUTER JOIN 会把两张表的所有记录全部选择出来，并且，自动把对方不存在的列填充为 NULL。</li>
+</ul>
+<hr />
+<p>参考：
+<a rel="external" href="https://jingyan.baidu.com/article/fa4125ac0e3c2928ac709204.html">如何在 Macbook 上安装 MySQL-百度经验</a>
+<a rel="external" href="https://stackoverflow.com/questions/51819285/bash-profile-bad-assignment">bash - .bash_profile: bad assignment - Stack Overflow</a></p>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-date">
+      2020-01-13T19:59:37
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">Hexo+Github 搭建博客（Mac）</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <h2 id="an-zhuang">安装</h2>
+<ol>
+<li>安装  <a rel="external" href="https://hexo.io/zh-cn/">Hexo</a> 前需要先安装下列应用程序：</li>
+</ol>
+<ul>
+<li><a rel="external" href="http://nodejs.org/">Node.js</a></li>
+<li><a rel="external" href="http://git-scm.com/">Git</a></li>
+</ul>
+<ol start="2">
+<li>安装 Hexo</li>
+</ol>
+<pre><code>$ npm install -g hexo-cli
+</code></pre>
+<h2 id="jian-zhan">建站</h2>
+<pre><code>$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+</code></pre>
+<h2 id="pei-zhi">配置</h2>
+<p>在 _config.yml 中修改配置。</p>
+<h2 id="geng-huan-zhu-ti">更换主题</h2>
+<p>换成我比较喜欢的 <a rel="external" href="https://github.com/iissnan/hexo-theme-next">next</a> 主题。</p>
+<ol>
+<li>安装</li>
+</ol>
+<pre><code>$ git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
+<ol start="2">
+<li>修改配置文件（_config.yml）</li>
+</ol>
+<pre><code>theme: next
+</code></pre>
+<ol start="3">
+<li>链接失效问题
+问题描述：「首页」「归档」等链接失效，URL 地址最后面出现「%20」。
+解决方法：去掉主题配置文件（theme/next/ _config.yml）里menu部分多余的空格，例如：</li>
+</ol>
+<pre><code>home: / || home
+</code></pre>
+<p>改为：</p>
+<pre><code>home: /|| home
+</code></pre>
+<h2 id="yu-lan">预览</h2>
+<pre><code>$ hexo server
+</code></pre>
+<p>启动服务器。默认情况下，访问网址为：http://localhost:4000/</p>
+<h2 id="bu-shu">部署</h2>
+<ol>
+<li>安装  <a rel="external" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
+</ol>
+<pre><code>$ npm install hexo-deployer-git —save
+</code></pre>
+<ol start="2">
+<li>修改配置（_config.yml）</li>
+</ol>
+<pre><code>deploy:
+  type: git
+  repository: https://github.com/&lt;你的 GitHub 用户名&gt;/&lt;你的 GitHub 用户名&gt;.github.io.git
+  branch: master
+</code></pre>
+<ol start="3">
+<li>生成站点文件并推送至远程库。</li>
+</ol>
+<pre><code>$ hexo clean &amp;&amp; hexo deploy
+</code></pre>
+<h2 id="xie-zuo">写作</h2>
+<pre><code>$ hexo new [layout] &lt;title&gt;
+$ hexo clean &amp;&amp; hexo deploy
+</code></pre>
+<hr />
+<p>参考：
+<a rel="external" href="https://blog.csdn.net/ainuser/article/details/77609180">hexo+github 搭建个人博客(超详细教程)_AinUser 的博客-CSDN 博客</a>
+<a rel="external" href="https://github.com/hexojs/hexo/issues/3816">404 问题 · Issue #3816 · hexojs/hexo · GitHub</a></p>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-date">
+      2020-01-14T07:54:22
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>

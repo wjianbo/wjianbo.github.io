@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<section class="daily-quote">
+  <p class="daily-quote-label">今日の一句</p>
+  <div class="daily-quote-card">
+    <p class="daily-quote-text" id="quote-text">加载中…</p>
+    <p class="daily-quote-meta" id="quote-meta"></p>
+  </div>
+</section>
+
+<script>
+fetch("https://wjianbo.github.io/aozorabunko/daily.json")
+  .then(r => r.json())
+  .then(data => {
+    const q = data.quote;
+
+    // 如果你有 normalizeAozoraText，这里可以接上
+    document.getElementById("quote-text").innerHTML = q.text;
+    document.getElementById("quote-meta").textContent =
+      `${q.author}《${q.title}》`;
+  })
+  .catch(() => {
+    document.getElementById("quote-text").textContent = "今日一句加载失败。";
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>新年快乐🎉</p>
+<p>希望在新的一年里，多观察，多思考，多写作。</p>
+<h2 id="zui-jin-geng-xin">最近更新</h2>
+
+
+<ul class="post-list">
+  
+  <li>
+    <a href="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;daily-write&#x2F;2026-02-27&#x2F;">不擅长</a>
+    <span class="post-date">2026-02-27</span>
+  </li>
+  
+  <li>
+    <a href="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;daily-write&#x2F;2026-02-24&#x2F;">出社</a>
+    <span class="post-date">2026-02-25</span>
+  </li>
+  
+  <li>
+    <a href="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;daily-write&#x2F;2026-02-21&#x2F;">第二次加油</a>
+    <span class="post-date">2026-02-21</span>
+  </li>
+  
+  <li>
+    <a href="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;daily-write&#x2F;2026-02-11&#x2F;">巧合</a>
+    <span class="post-date">2026-02-11</span>
+  </li>
+  
+  <li>
+    <a href="https:&#x2F;&#x2F;wjianbo.github.io&#x2F;daily-write&#x2F;2026-02-09&#x2F;">2026年想读的书</a>
+    <span class="post-date">2026-02-09</span>
+  </li>
+  
+</ul>
+
+
+<p class="section-link">
+  <a href="/daily-write/">→</a>
+</p>
+
+
+
+
+<p><a href="https://wjianbo.github.io/archive">旧文归档</a></p>
+<h2 id="lian-xi-fang-shi">联系方式</h2>
+<p>Email: jianbo.one@gmail.com</p>
+<p><a rel="external" href="https://twitter.com/wjianbo">𝕏</a> • <a rel="external" href="https://t.me/blowind">Telegram 频道</a> • <a rel="external" href="https://instagram.com/wjianbo">Instagram</a> • <a rel="external" href="https://wjianbo.github.io/running_page/">跑步记录</a></p>
+
+
+
+
+
+    </main>
+  </body>
+</html>

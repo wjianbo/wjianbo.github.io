@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>蜗牛日常 - 电影</title>
+    <link rel="self" type="application/atom+xml" href="https://wjianbo.github.io/tags/dian-ying/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://wjianbo.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-03-24T00:00:00+00:00</updated>
+    <id>https://wjianbo.github.io/tags/dian-ying/atom.xml</id>
+    <entry xml:lang="en">
+        <title>男孩、鼹鼠、狐狸和马</title>
+        <published>2023-03-24T00:00:00+00:00</published>
+        <updated>2023-03-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              王健波
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wjianbo.github.io/archive/2023/the-boy-the-mole-the-fox-and-the-horse-2022/"/>
+        <id>https://wjianbo.github.io/archive/2023/the-boy-the-mole-the-fox-and-the-horse-2022/</id>
+        
+        <content type="html" xml:base="https://wjianbo.github.io/archive/2023/the-boy-the-mole-the-fox-and-the-horse-2022/">&lt;p&gt;看了第 95 届奥斯卡最佳动画短片《男孩、鼹鼠、狐狸和马》。故事讲的是一个迷路的小男孩如何在鼹鼠、狐狸和马的陪伴下找到回家的路。画风干净，金句频出。其中有一句是这样说的：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们最大的自由之一，就是决定如何对事情做出反应。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;特别想把这句话送给晶。因为她总是因为各种事情而烦恼。比如每逢阴天下雨，她就没有心情做事。我笑她是一个太阳能充电机器人。&lt;&#x2F;p&gt;
+&lt;p&gt;阿德勒心理学认为，情绪有其目的。也就是说因果关系是相反的：不是因为阴天而没有心情做事，而是因为不想做事，所以找各种理由。晶当然不同意这种解释。&lt;&#x2F;p&gt;
+&lt;p&gt;总之，晶对阴天做出了不开心的反应。问题是，这个反应究竟是不是她可以决定，可以选择的呢？&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
