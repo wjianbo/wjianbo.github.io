@@ -1,3 +1,7 @@
+---
+title: "_index"
+---
+
 +++
 sort_by = "date"
 +++

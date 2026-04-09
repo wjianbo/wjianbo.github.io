@@ -7,5 +7,11 @@
   ],
   "notes/dong-jiu-liu-mi-shi.md": [
     "notes/fang-zi.md"
+  ],
+  "posts/linkdown-ba-wikilink-dai-chu-obsidian.md": [
+    "_index.md"
+  ],
+  "recipes/milk-oatmeal.md": [
+    "posts/linkdown-ba-wikilink-dai-chu-obsidian.md"
   ]
 }
