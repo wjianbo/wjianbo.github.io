@@ -26,8 +26,6 @@ slug: "linkdown-ba-wikilink-dai-chu-obsidian"
 
 ```
 [[跑步训练]]
-
-[牛奶燕麦粥](@/recipes/milk-oatmeal.md)
 ```
 
 很轻松。
@@ -60,7 +58,7 @@ slug: "linkdown-ba-wikilink-dai-chu-obsidian"
 
   
 
-linkdown 在做什么
+## linkdown 在做什么
 
   
 
@@ -78,19 +76,15 @@ linkdown 很简单，只做一件事：
 
 ```
 [[跑步训练]]
-
-[牛奶燕麦粥](@/recipes/milk-oatmeal.md)
 ```
 
 会变成：
 
 ```
-[跑步训练](../running)
-
-[牛奶燕麦粥](../food/oatmeal)
+[跑步训练](＠/running)
 ```
 
-同时，它也顺手解决了一些实际问题：
+同时，它也帮我解决一些实际问题：
 
   
 
@@ -150,12 +144,9 @@ linkdown 很简单，只做一件事：
   
 
   
-
-写作时，我只想专注一件事：
-
   
 
-👉 内容之间的连接
+👉 让内容之间的连接变得更容易
 
   
 
