@@ -1,14 +1,14 @@
 {
-  "archive/2022/yong-github-issues-xie-bo-ke.md": [
-    "archive/2023/yong-obsidian-xie-bo-ke.md"
+  "archive/2022/2022-03-07-用 GitHub Issues 写博客.md": [
+    "archive/2023/2023-02-23-用 Obsidian 写博客.md"
   ],
-  "notes/da-tian-qu.md": [
-    "notes/dong-jiu-liu-mi-shi.md"
+  "notes/东久留米市.md": [
+    "notes/房子.md"
   ],
-  "notes/dong-jiu-liu-mi-shi.md": [
-    "notes/fang-zi.md"
+  "notes/大田区.md": [
+    "notes/东久留米市.md"
   ],
-  "posts/linkdown-ba-wikilink-dai-chu-obsidian.md": [
+  "posts/linkdown：把 wikilink 带出 Obsidian.md": [
     "_index.md"
   ]
 }

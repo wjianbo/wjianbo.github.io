@@ -1,7 +1,3 @@
 ---
-title: "posts"
----
-
----
 ---
 # posts
