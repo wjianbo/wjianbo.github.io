@@ -12,7 +12,7 @@ sort_by: date
 
 整理了一些[食谱](recipes)。
 
-[linkdown：把 wikilink 带出 Obsidian](@/posts/linkdown：把 wikilink 带出 Obsidian.md)
+[linkdown：把 wikilink 带出 Obsidian](@/posts/linkdown-ba-wikilink-dai-chu-obsidian.md)
 
 <!-- POSTS -->
 
