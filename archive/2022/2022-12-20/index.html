@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">Linux笔记</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <p>安装中日文输入法（Steam Deck 桌面模式）</p>
+<ol>
+<li>
+<p>通过 Discover - Software Center 安装 ：</p>
+<ul>
+<li>Fcitx 5</li>
+<li>Mozc for Fcitx 5</li>
+<li>Rime for Fcitx 5</li>
+</ul>
+</li>
+<li>
+<p>通过 Fcitx Configuration 添加 Rime 和 Mozc。</p>
+</li>
+<li>
+<p>安装配置管理工具<a rel="external" href="https://github.com/rime/plum">東風破</a> /plum/</p>
+</li>
+</ol>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/rime/plum/master/rime-install | bash
+</code></pre>
+<ol start="4">
+<li>用東風破安裝口令安装所需的输入方案（需要在 plum 目录下执行）</li>
+</ol>
+<pre><code>bash rime-install wubi
+</code></pre>
+<ol start="5">
+<li>修改配置文件<code>~/.local/share/fcitx5/rime/</code></li>
+</ol>
+<pre><code>schema_list:
+  - schema: wubi86
+  - schema: luna_pinyin_simp
+</code></pre>
+<p>配置文件的位置可能不同，参考<a rel="external" href="https://github.com/rime/home/wiki/UserData">这里</a>。</p>
+<ol start="6">
+<li>右键点击输入法图标，选择 Deploy 使配置生效。</li>
+</ol>
+<hr />
+<p>Get rid of read only filesystem folders (like /usr) on Steam Deck</p>
+<pre><code data-lang="bash">sudo steamos-readonly disable
+</code></pre>
+<p>enable it again after you're done with your changes:</p>
+<pre><code data-lang="shell">sudo steamos-readonly enable
+</code></pre>
+<hr />
+<ul>
+<li><a rel="external" href="https://gist.github.com/wjianbo/e073893d3fd701332a425bce97c8830f">setup L2TP IPsec VPN in archlinux</a></li>
+</ul>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-date">
+      2022-12-20T23:57:00
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>

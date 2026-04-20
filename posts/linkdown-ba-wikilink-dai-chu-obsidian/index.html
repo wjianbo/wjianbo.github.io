@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">linkdown：把 wikilink 带出 Obsidian</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <p>我最近做了一个小工具：</p>
+<p>👉 <a rel="external" href="https://github.com/wjianbo/linkdown">linkdown</a></p>
+<h2 id="qi-yin">起因</h2>
+<p>在 Obsidian 里，我习惯这样写：</p>
+<pre><code>[[跑步训练]]
+</code></pre>
+<p>很轻松。</p>
+<p>不用关心路径，只关心内容之间的关系。</p>
+<p>但一旦把笔记发布到博客（我用的是 Zola），问题就来了：</p>
+<p><code>[[...]]</code> 并不是标准 Markdown。</p>
+<p>你必须写成：</p>
+<pre><code>[标题](路径)
+</code></pre>
+<p>这就多了一层心智负担。</p>
+<h2 id="linkdown-zai-zuo-shen-me">linkdown 在做什么</h2>
+<p>linkdown 很简单，只做一件事：</p>
+<p>👉 把 <code>[[wikilink]]</code> 转成标准 Markdown 链接</p>
+<p>例如：</p>
+<pre><code>[[跑步训练]]
+</code></pre>
+<p>会变成：</p>
+<pre><code>[跑步训练](＠/running)
+</code></pre>
+<p>同时，它也帮我解决一些实际问题：</p>
+<ul>
+<li>自动补全 front matter（比如 title）</li>
+<li>文件重命名（例如把中文转成拼音 slug）</li>
+</ul>
+<h2 id="wo-de-shi-yong-fang-shi">我的使用方式</h2>
+<p>写作阶段：</p>
+<ul>
+<li>全部使用 <code>[[...]]</code></li>
+<li>文件名就是标题</li>
+<li>不关心路径，也不写博客专用属性</li>
+</ul>
+<p>发布阶段（通过 GitHub Actions）：</p>
+<ol>
+<li>用文件名补全 front matter</li>
+<li>生成符合 URL 的 slug（重命名文件）</li>
+<li>把 wikilink 转换成 Markdown 链接</li>
+</ol>
+<p>处理完成后，再同步到博客仓库。</p>
+<h2 id="wei-shen-me-yao-zuo-zhe-ge">为什么要做这个</h2>
+<p>👉 让内容之间的连接变得更容易</p>
+<p>至于路径、文件名、结构——</p>
+<p>这些都应该是“发布阶段的问题”。</p>
+<h2 id="xiang-mu-di-zhi">项目地址</h2>
+<p>如果你也有类似需求，可以看看这个小工具：</p>
+<p>👉 https://github.com/wjianbo/linkdown</p>
+<p>代码不多，思路也很简单。</p>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>
