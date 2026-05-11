@@ -6,7 +6,7 @@ slug: "zuo-le-yi-ge-ji-lu-app"
 
 最近做了一个记录 app，叫 **life note**。
 
-它受 yihong 的 **lfn** 启发，用来记录每天做过的事。
+它受 yihong 的 **[lfn](https://github.com/yihong0618/lfn)** 启发，用来记录每天做过的事。
 
 比如几点起床，吃了什么，跑了步，读了书，写了代码，修了 bug，或者只是记一句“今天有点累”。
 
@@ -32,7 +32,7 @@ life note 现在还很简单。打开，记一条，关掉。没有复杂分类�
 你确实度过了一些日子。  
 你确实在慢慢变成现在的自己。
 
-目前 iOS 版已经上线，暂时免费。欢迎试试看。
+目前 [iOS 版](https://apps.apple.com/us/app/life-note-daily-log/id6763540947)已经上线，暂时免费。欢迎试试看。
 
-**life note**  
+**[life note](https://wjianbo.github.io/life-note-site)**  
 一个简单的每日记录 app。
