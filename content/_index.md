@@ -14,8 +14,8 @@ sort_by: date
 
 ## 入口
 
-- [life note：一个简单的每日记录 app](@/posts/life-note-yi-ge-jian-dan-de-mei-ri-ji-lu-app.md)
-- [linkdown：把 wikilink 带出 Obsidian](@/posts/linkdown-ba-wikilink-dai-chu-obsidian.md)
+- [life note：一个简单的每日记录 app](@/works/life-note-yi-ge-jian-dan-de-mei-ri-ji-lu-app.md)
+- [linkdown：把 wikilink 带出 Obsidian](@/works/linkdown-ba-wikilink-dai-chu-obsidian.md)
 - [食谱](recipes)
 - [旧文归档](archive)
 
