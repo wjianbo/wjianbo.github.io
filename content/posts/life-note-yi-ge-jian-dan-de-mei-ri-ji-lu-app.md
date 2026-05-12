@@ -1,7 +1,7 @@
 ---
 title: "life note：一个简单的每日记录 app"
 slug: "life-note-yi-ge-jian-dan-de-mei-ri-ji-lu-app"
-date: 2026-05-12
+date: 2026-05-10
 ---
 
 最近做了一个记录 app，叫 **life note**。
