@@ -1,5 +1,6 @@
 ---
 title: "Life Note Support"
+date: 2026-05-12
 ---
 
 +++

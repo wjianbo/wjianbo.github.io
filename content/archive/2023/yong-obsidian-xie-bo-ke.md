@@ -4,7 +4,6 @@ slug: "yong-obsidian-xie-bo-ke"
 date: 2023-02-23
 ---
 
-
 去年一直在[用 GitHub Issues 写博客](@/archive/2022/yong-github-issues-xie-bo-ke.md)，今年迷上了 Obsidian，经过新一轮的折腾，终于可以用它管理博客内容了。
 
 和用 Issues 相比，ob 的好处是更方便在文章之间建立链接，来回跳转。另外，通过 Graph view 可以很直观地看到文章之间的联系，就像下面这张截图。每一个点都代表一篇文章。现在它就像一盘散沙。希望我可以慢慢把这些点连起来。就像乔布斯说的，**Connect the dots**。

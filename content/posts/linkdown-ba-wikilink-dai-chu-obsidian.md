@@ -1,8 +1,8 @@
 ---
 title: "linkdown：把 wikilink 带出 Obsidian"
 slug: "linkdown-ba-wikilink-dai-chu-obsidian"
+date: 2026-05-12
 ---
-
 
 我最近做了一个小工具：
 

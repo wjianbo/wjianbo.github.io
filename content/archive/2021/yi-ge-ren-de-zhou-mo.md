@@ -5,7 +5,6 @@ date: 2021-09-19T09:17:20+09:00
 draft: false
 ---
 
-
 晶和朋友去江之岛，一个人在家折腾了一下博客。这次尝试了 [Hugo](https://gohugo.io/)。很喜欢[谢益辉博客](https://yihui.org/)的风格，直接不厚道地 Copy 来用了。
 
 步骤参考官方文档：[Quick Start](https://gohugo.io/getting-started/quick-start/)。进行到第三步时安装 [hugo-ivy](https://github.com/yihui/hugo-ivy) 主题：

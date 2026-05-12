@@ -1,8 +1,8 @@
 ---
-title: "做了一个记录 app"
-slug: "zuo-le-yi-ge-ji-lu-app"
+title: "life note：一个简单的每日记录 app"
+slug: "life-note-yi-ge-jian-dan-de-mei-ri-ji-lu-app"
+date: 2026-05-12
 ---
-
 
 最近做了一个记录 app，叫 **life note**。
 

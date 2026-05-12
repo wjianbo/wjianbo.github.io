@@ -1,10 +1,8 @@
 ---
 title: "麻婆豆腐（清爽版）"
 slug: "ma-po-dou-fu-qing-shuang-ban"
+date: 2026-05-12
 ---
-
-
-
 
 > 清淡口味，也能轻松做出来的麻婆豆腐
 

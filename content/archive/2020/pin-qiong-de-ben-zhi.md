@@ -4,7 +4,6 @@ slug: "pin-qiong-de-ben-zhi"
 date: 2020-02-18
 ---
 
-
 开始读《贫穷的本质》。
 
 看完了 *This Is Us* 第二季。

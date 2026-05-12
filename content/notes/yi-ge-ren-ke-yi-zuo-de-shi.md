@@ -1,8 +1,8 @@
 ---
 title: "一个人可以做的事"
 slug: "yi-ge-ren-ke-yi-zuo-de-shi"
+date: 2026-05-12
 ---
-
 
 - 网球
 - 跑步
