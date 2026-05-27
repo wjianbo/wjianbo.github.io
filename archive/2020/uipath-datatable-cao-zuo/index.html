@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">UiPath DataTable 操作</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <h2 id="shai-xuan">筛选</h2>
+<p>使用 Filter Data Table Activity 可以对 DataTable 的数据进行筛选。</p>
+<p>如果是通过 DataScraping 获取的 DataTable，因为数据类型都是 String，无法直接比较数值大小。</p>
+<p>解决方法：</p>
+<pre><code>aDataTable.Select(&quot;Convert([WIID],&#39;System.Int32&#39;)&lt;200000&quot;).CopyToDataTable
+</code></pre>
+<p>.CopyToDataTable 可以将 .Select 得到的 DataRow[] 复制到新 DataTable。</p>
+<p>参考： <a rel="external" href="https://forum.uipath.com/t/filter-data-table-activity/76465">Filter Data Table Activity</a></p>
+<h2 id="fu-zhi-datarow">复制 DataRow</h2>
+<p>.CopyToDataTable 只适用于 DataRow[]，如果要把单独一条 Datarow 复制到新的 DataTable，可尝试以下方法：</p>
+<ol>
+<li>use Build Datatabel Activity set output as dtO</li>
+<li>use Assign activity dtO=yourDatatable.Clone()</li>
+<li>use Add AddROW Activity.</li>
+<li>set ArrayROW in item.ItemArray(), Datatable=dtO</li>
+</ol>
+<p>参考：<a rel="external" href="https://forum.uipath.com/t/copy-row-from-one-datatable-to-another/80/14">Copy Row from one DataTable to another - RPA Developers - UiPath Community Forum</a></p>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-date">
+      2020-02-05T09:58:15
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>

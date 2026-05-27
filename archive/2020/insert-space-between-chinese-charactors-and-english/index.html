@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>蜗牛日常</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://wjianbo.github.io/main.css">
+    <link rel="stylesheet" href="https://wjianbo.github.io/custom.css">
+
+    
+      
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="RSS"
+        href="https://wjianbo.github.io/atom.xml"
+      >
+    
+
+    
+  </head>
+
+  <body>
+    <main class="content container px-2 pb-20">
+      
+
+<article class="post">
+
+  <!-- 标题 -->
+  <header class="post-header">
+    <h1 class="post-title">在中文和英文、数字之间快速添加空格</h1>
+  </header>
+
+  <!-- 正文 -->
+  <div class="post-content">
+    <p>中文和数字、英文之间有一个空格会更美观。可以利用 vscode 的查找/替换功能实现。
+想要搜索任意中文和数字或英文字母的组合，需要用到以下正则表达式，并启动正则匹配搜索模式：</p>
+<ul>
+<li>中文在左，数字或英文字母在右：<code>([\u4e00-\u9fa5]+)([\da-zA-Z]+)</code></li>
+<li>数字或英文字母在左，中文在右：<code>([\da-zA-Z]+)([\u4e00-\u9fa5]+)</code></li>
+</ul>
+<p>然后 replace 行填写「$1 $2」 用于定义格式。</p>
+<hr />
+<p>参考：<a rel="external" href="https://blog.csdn.net/qiaoanlu/article/details/103282569">如何批量添加中文和英文数字之间的空格？用正则表达式吧_Hello,World.-CSDN 博客</a></p>
+
+  </div>
+
+  <!-- 作者署名（文章结束后） -->
+  
+  
+  <footer class="post-footer">
+    <div class="post-author">
+      —
+      王健波
+      
+    </div>
+    
+    <div class="post-date">
+      2020-01-14T09:38:31
+    </div>
+    
+    <div class="post-back">
+      <a href="../">←</a>
+    </div>
+  </footer>
+  
+
+</article>
+
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "HuiwenMincho";
+  src: url("/fonts/huiwen-mincho/Huiwenmincho-improved.woff2") format("woff2"),
+       url("/fonts/huiwen-mincho/Huiwenmincho-improved.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.library-reading {
+  font-family: "HuiwenMincho", "Noto Serif SC", "Source Han Serif SC", serif;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
