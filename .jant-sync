@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "site_id": "sit_01krhh9k99f24sfm8q6mdqdtsn",
+  "site_host": "jianbo.jant.blog",
+  "created_at": 1785245518,
+  "managed_globs": [
+    "content/**",
+    "data/jant.toml",
+    "themes/jant/**",
+    "hugo.toml",
+    ".gitignore",
+    "README.md",
+    ".jant-sync"
+  ]
+}

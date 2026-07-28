@@ -1,6 +1,6 @@
 ---
-title: "Archive"
-type: "archive"
+title: "Featured"
+type: "featured"
 outputs:
   - "html"
   - "rss"

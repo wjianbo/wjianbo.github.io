@@ -1,0 +1,169 @@
+format = "jant-site"
+version = 1
+generated_at = "2026-07-28T13:31:57.000Z"
+site_name = "Jianbo"
+site_description = ""
+site_language = "zh-Hans"
+main_rss_feed = "featured"
+public_api_enabled = true
+rss_feeds_enabled = true
+show_jant_branding_on_home = true
+show_header_avatar = false
+noindex = false
+site_avatar_mode = "none"
+favicon_mode = "default"
+apple_touch_mode = "default"
+theme_id = "tufte"
+default_theme_id = "tufte"
+font_theme_id = "tufte"
+theme_mode = "auto"
+page_size = 50
+archive_page_size = 50
+rss_feed_limit = 50
+favicon_path = "/favicon.ico"
+apple_touch_icon_path = "/apple-touch-icon.png"
+site_footer_html = "<p>愿你免于痛苦 •愿你健康 •愿你快乐 •愿你寻得平静与喜悦</p>"
+site_footer_markdown = "愿你免于痛苦 •愿你健康 •愿你快乐 •愿你寻得平静与喜悦"
+
+[[nav]]
+type = "system"
+label = "Latest"
+url = "/"
+system_key = "latest"
+placement = "header"
+
+[[nav]]
+type = "system"
+label = "Featured"
+url = "/featured/"
+system_key = "featured"
+placement = "header"
+
+[[nav]]
+type = "link"
+label = "Now"
+url = "/now"
+system_key = ""
+placement = "header"
+
+[[nav]]
+type = "system"
+label = "Collections"
+url = "/collections/"
+system_key = "collections"
+placement = "header"
+
+[[nav]]
+type = "link"
+label = "About"
+url = "/about"
+system_key = ""
+placement = "header"
+
+[[nav]]
+type = "system"
+label = "Feed"
+url = "/featured/index.xml"
+system_key = "rss"
+placement = "header"
+
+[[nav]]
+type = "system"
+label = "Archive"
+url = "/archive/"
+system_key = "archive"
+placement = "header"
+
+[[directory]]
+type = "collection"
+sequence = "00"
+slug = "now"
+title = "Now"
+entry_count = 3
+recent_activity_label = "6d ago"
+recent_activity_iso = "2026-07-22T10:15:51.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "01"
+slug = "life"
+title = "Life"
+description_html = "<p>记录生活｡</p>"
+entry_count = 9
+recent_activity_label = "6d ago"
+recent_activity_iso = "2026-07-22T10:15:51.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "02"
+slug = "books"
+title = "Books"
+entry_count = 4
+recent_activity_label = "6d ago"
+recent_activity_iso = "2026-07-21T22:55:06.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "03"
+slug = "thoughts"
+title = "Thoughts"
+description_html = "<p>记录一些脑海中偶尔闪过的片段。</p>"
+entry_count = 7
+recent_activity_label = "Jun 14"
+recent_activity_iso = "2026-06-14T11:03:18.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "04"
+slug = "guitar"
+title = "Guitar"
+description_html = "<p>收集一些吉他谱</p>"
+entry_count = 4
+recent_activity_label = "May 29"
+recent_activity_iso = "2026-05-29T22:59:28.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "05"
+slug = "good-things"
+title = "Good Things"
+entry_count = 1
+recent_activity_label = "May 17"
+recent_activity_iso = "2026-05-17T00:40:18.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "06"
+slug = "rm"
+title = "R.M."
+entry_count = 13
+recent_activity_label = "Jul 11"
+recent_activity_iso = "2026-07-11T02:24:34.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "07"
+slug = "wishlist"
+title = "Wishlist"
+entry_count = 1
+recent_activity_label = "May 22"
+recent_activity_iso = "2026-05-22T14:04:07.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "08"
+slug = "links"
+title = "Links"
+entry_count = 1
+recent_activity_label = "May 14"
+recent_activity_iso = "2026-05-14T01:26:00.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "09"
+slug = "essays"
+title = "Essays"
+description_html = "<p>整理成文的随笔。</p>"
+entry_count = 1
+recent_activity_label = "Jun 14"
+recent_activity_iso = "2026-06-14T22:35:59.000Z"

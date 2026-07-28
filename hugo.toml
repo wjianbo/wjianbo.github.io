@@ -1,0 +1,47 @@
+baseURL = "https://jianbo.jant.blog/"
+title = "Jianbo"
+languageCode = "zh-hans"
+defaultContentLanguage = "zh-hans"
+theme = "jant"
+paginate = 50
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[permalinks]
+  post = "/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/atom+xml"
+    baseName = "index"
+    isPlainText = true
+    rel = "alternate"
+
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[params]
+  description = ""
+  main_rss_feed = "featured"
+  public_api_enabled = true
+  rss_feeds_enabled = true
+  show_jant_branding_on_home = true
+  show_header_avatar = false
+  noindex = false
+  theme_id = "tufte"
+  default_theme_id = "tufte"
+  font_theme_id = "tufte"
+  theme_mode = "auto"
+  page_size = 50
+  archive_page_size = 50
+  rss_feed_limit = 50
