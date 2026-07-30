@@ -1,11 +1,15 @@
 ## update and install some things we should probably have
+set -euo pipefail
+
 apt-get update
 apt-get install -y \
+  ca-certificates \
   curl \
   git \
   sudo \
-  zsh \
+  zsh
 
-## install zola
-curl -sSL https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xvz
-sudo mv zola /usr/local/bin
+## install hugo
+HUGO_VERSION="0.164.0"
+curl -sSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz" | tar -xz hugo
+sudo mv hugo /usr/local/bin/hugo

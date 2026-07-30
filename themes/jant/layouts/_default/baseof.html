@@ -1,5 +1,5 @@
 <!doctype html>
-{{- $lang := .Site.LanguageCode | default "en" -}}
+{{- $lang := .Site.Language.Locale | default "en" -}}
 {{- $themeMode := .Site.Params.theme_mode | default "auto" -}}
 {{- $themeId := .Site.Params.theme_id -}}
 <html lang="{{ $lang }}"{{ with $themeId }} data-theme="{{ . }}"{{ end }}{{ if ne $themeMode "auto" }} data-theme-mode="{{ $themeMode }}"{{ end }}>
