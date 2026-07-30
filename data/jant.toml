@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-07-28T23:23:29.000Z"
+generated_at = "2026-07-30T18:55:54.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -80,7 +80,7 @@ sequence = "00"
 slug = "now"
 title = "Now"
 entry_count = 4
-recent_activity_label = "6d ago"
+recent_activity_label = "Jul 22"
 recent_activity_iso = "2026-07-22T10:15:51.000Z"
 
 [[directory]]
@@ -90,7 +90,7 @@ slug = "life"
 title = "Life"
 description_html = "<p>记录生活｡</p>"
 entry_count = 9
-recent_activity_label = "6d ago"
+recent_activity_label = "Jul 22"
 recent_activity_iso = "2026-07-22T10:15:51.000Z"
 
 [[directory]]
@@ -98,9 +98,9 @@ type = "collection"
 sequence = "02"
 slug = "books"
 title = "Books"
-entry_count = 4
-recent_activity_label = "7d ago"
-recent_activity_iso = "2026-07-21T22:55:06.000Z"
+entry_count = 5
+recent_activity_label = "1m ago"
+recent_activity_iso = "2026-07-30T18:55:53.000Z"
 
 [[directory]]
 type = "collection"

@@ -1,6 +1,6 @@
 baseURL = "https://jianbo.jant.blog/"
 title = "Jianbo"
-locale = "zh-hans"
+languageCode = "zh-hans"
 defaultContentLanguage = "zh-hans"
 theme = "jant"
 paginate = 50
@@ -29,10 +29,6 @@ disableKinds = ['taxonomy', 'term']
 [mediaTypes]
   [mediaTypes."application/atom+xml"]
     suffixes = ["xml"]
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
 
 [params]
   description = ""
