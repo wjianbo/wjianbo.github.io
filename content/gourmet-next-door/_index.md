@@ -1,8 +1,8 @@
 ---
 id: "pst_01kyz0xjgpfqb9trgttjkzrmc1"
-title: "隔壁的美食"
+title: "隔壁美食"
 date: "2026-08-01T16:01:08.000Z"
-updated: "2026-08-01T16:08:15.000Z"
+updated: "2026-08-01T16:17:06.000Z"
 slug: "gourmet-next-door"
 type: "post"
 draft: true
