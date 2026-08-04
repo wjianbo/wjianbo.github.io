@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-04T07:49:52.000Z"
+generated_at = "2026-08-04T22:04:41.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -99,7 +99,7 @@ sequence = "02"
 slug = "books"
 title = "Books"
 entry_count = 5
-recent_activity_label = "4d ago"
+recent_activity_label = "5d ago"
 recent_activity_iso = "2026-07-30T18:55:53.000Z"
 
 [[directory]]
@@ -174,5 +174,5 @@ sequence = "10"
 slug = "translations"
 title = "Translations"
 entry_count = 0
-recent_activity_label = "2d ago"
+recent_activity_label = "3d ago"
 recent_activity_iso = "2026-08-01T16:01:02.000Z"
