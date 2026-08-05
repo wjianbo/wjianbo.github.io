@@ -9,6 +9,12 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "看完《刃牙道：无敌武士》，我很向往那种沉迷于一件事的境界。 涉川刚气问本部以藏： “你一天练多久？” 本部沉默片刻，回答：“一天有几次。” “一天只练几次吗？”"
+collections:
+  - slug: "essays"
+    title: "Essays"
+    collected_at: "2026-08-04T22:52:26.000Z"
+    position: 0
+    pinned_at: null
 ---
 
 看完《刃牙道：无敌武士》，我很向往那种沉迷于一件事的境界。
