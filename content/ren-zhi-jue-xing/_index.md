@@ -6,6 +6,7 @@ slug: "ren-zhi-jue-xing"
 type: "post"
 aliases:
   - "/ep41u/"
+  - "/lakgn/"
 format: "note"
 status: "published"
 visibility: "public"
@@ -16,7 +17,7 @@ collections:
     collected_at: "2026-07-30T18:55:53.000Z"
     position: 0
     pinned_at: null
-last_activity_at: "2026-08-05T11:38:18.000Z"
+last_activity_at: "2026-08-05T12:49:12.000Z"
 ---
 
 > 人生是一场消除模糊的比赛。
