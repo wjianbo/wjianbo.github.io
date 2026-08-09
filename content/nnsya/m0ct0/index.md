@@ -24,6 +24,7 @@ media:
     size: 253120
     provider: "s3"
     storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kx5f8m3vfk6rqyxe45chw7hx.jpg"
+quiet_reply: true
 ---
 
 回国了，不能再自由地使用 chatgpt，又用回自己的 app。

@@ -9,6 +9,7 @@ build:
 format: "note"
 status: "published"
 visibility: "public"
+quiet_reply: true
 ---
 
 ```jant-embed

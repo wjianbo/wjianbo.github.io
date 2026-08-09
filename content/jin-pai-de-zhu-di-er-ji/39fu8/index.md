@@ -10,6 +10,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "第二季只有九集完全不够看。"
+quiet_reply: true
 ---
 
 第二季只有九集完全不够看。

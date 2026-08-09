@@ -22,6 +22,7 @@ media:
     chars: 514
     provider: "s3"
     storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01ksjdgqqpf27skfyw9ypb6kq2.md"
+quiet_reply: true
 ---
 
 忽然想起，在孩子快要生出来的最后时刻，其中一位助产士站到凳子上，从上方按压晶的肚子！
