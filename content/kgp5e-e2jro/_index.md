@@ -6,6 +6,7 @@ slug: "kgp5e-e2jro"
 type: "post"
 aliases:
   - "/1oe4i/"
+  - "/34itt/"
 format: "note"
 status: "published"
 visibility: "public"
@@ -16,7 +17,7 @@ collections:
     collected_at: "2026-08-10T12:16:26.000Z"
     position: 0
     pinned_at: null
-last_activity_at: "2026-08-10T12:20:38.000Z"
+last_activity_at: "2026-08-10T12:22:39.000Z"
 ---
 
 > 簡単なことを丁寧に
