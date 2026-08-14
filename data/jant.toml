@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-12T13:14:31.000Z"
+generated_at = "2026-08-14T02:01:24.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -99,7 +99,7 @@ sequence = "02"
 slug = "books"
 title = "Books"
 entry_count = 6
-recent_activity_label = "2d ago"
+recent_activity_label = "3d ago"
 recent_activity_iso = "2026-08-10T12:22:39.000Z"
 
 [[directory]]
@@ -165,7 +165,7 @@ slug = "essays"
 title = "Essays"
 description_html = "<p>整理成文的随笔。</p>"
 entry_count = 2
-recent_activity_label = "7d ago"
+recent_activity_label = "Aug 4"
 recent_activity_iso = "2026-08-04T22:04:41.000Z"
 
 [[directory]]
