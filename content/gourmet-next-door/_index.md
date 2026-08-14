@@ -2,7 +2,7 @@
 id: "pst_01kyz0xjgpfqb9trgttjkzrmc1"
 title: "隔壁美食"
 date: "2026-08-01T16:01:08.000Z"
-updated: "2026-08-14T02:01:24.000Z"
+updated: "2026-08-14T02:52:23.000Z"
 slug: "gourmet-next-door"
 type: "post"
 draft: true
@@ -66,7 +66,7 @@ collections:
 
 肚子饿了，就随便吃点。泡面也好，在便利店随便买的面包、饭团也好。只要能填饱肚子，就够了。
 
----
+\*\*
 
 转变发生在一个晚上。
 
