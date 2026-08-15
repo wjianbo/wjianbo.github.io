@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-14T03:01:56.000Z"
+generated_at = "2026-08-15T03:03:30.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -99,7 +99,7 @@ sequence = "02"
 slug = "books"
 title = "Books"
 entry_count = 6
-recent_activity_label = "3d ago"
+recent_activity_label = "4d ago"
 recent_activity_iso = "2026-08-10T12:22:39.000Z"
 
 [[directory]]
