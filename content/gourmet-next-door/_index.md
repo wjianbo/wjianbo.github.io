@@ -2,13 +2,12 @@
 id: "pst_01kyz0xjgpfqb9trgttjkzrmc1"
 title: "吉田笃弘《隔壁的晚餐》"
 date: "2026-08-01T16:01:08.000Z"
-updated: "2026-08-15T03:23:55.000Z"
+updated: "2026-08-15T03:24:19.000Z"
 slug: "gourmet-next-door"
 type: "post"
-draft: true
 format: "note"
 status: "published"
-visibility: "private"
+visibility: "public"
 summary_text: "真希听房东说，隔壁那间空了很久的房间终于住进了新房客。 可是，她从来没有听见过任何声音。 “听说是在大学食堂工作。” 这是房东告诉她的唯一信息。 “所以，大概每天一大早就出门了吧。”"
 collections:
   - slug: "translations"

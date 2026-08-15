@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-15T03:23:55.000Z"
+generated_at = "2026-08-15T03:24:19.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -173,6 +173,6 @@ type = "collection"
 sequence = "10"
 slug = "translations"
 title = "Translations"
-entry_count = 0
+entry_count = 1
 recent_activity_label = "Aug 1"
-recent_activity_iso = "2026-08-01T16:01:02.000Z"
+recent_activity_iso = "2026-08-01T16:01:08.000Z"

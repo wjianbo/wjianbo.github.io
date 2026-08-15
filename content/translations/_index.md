@@ -3,7 +3,7 @@ title: "Translations"
 slug: "translations"
 type: "collection"
 sort_order: "newest"
-entry_count: 0
+entry_count: 1
 outputs:
   - "html"
   - "rss"
