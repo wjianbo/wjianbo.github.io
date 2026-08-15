@@ -2,7 +2,7 @@
 id: "pst_01kyz0xjgpfqb9trgttjkzrmc1"
 title: "吉田笃弘《隔壁的晚餐》"
 date: "2026-08-01T16:01:08.000Z"
-updated: "2026-08-15T03:03:30.000Z"
+updated: "2026-08-15T03:23:55.000Z"
 slug: "gourmet-next-door"
 type: "post"
 draft: true
