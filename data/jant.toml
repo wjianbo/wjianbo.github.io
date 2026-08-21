@@ -1,10 +1,13 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-15T13:08:07.000Z"
+generated_at = "2026-08-21T12:54:01.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
+multilingual_enabled = false
+additional_languages = ""
 main_rss_feed = "featured"
+archive_default_layout = "list"
 public_api_enabled = true
 rss_feeds_enabled = true
 show_jant_branding_on_home = true
@@ -69,7 +72,7 @@ placement = "header"
 
 [[nav]]
 type = "system"
-label = "Archive"
+label = "All"
 url = "/archive/"
 system_key = "archive"
 placement = "header"
@@ -99,7 +102,7 @@ sequence = "02"
 slug = "books"
 title = "Books"
 entry_count = 6
-recent_activity_label = "5d ago"
+recent_activity_label = "Aug 10"
 recent_activity_iso = "2026-08-10T12:22:39.000Z"
 
 [[directory]]

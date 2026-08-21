@@ -36,8 +36,6 @@
   --site-reading-heading: oklch(0.178 0.004 70);
   --site-reading-body: oklch(0.22 0.005 70);
   --site-reading-quote: oklch(0.36 0.008 55);
-  --font-cjk-serif-fallback: "Songti SC", STSong, SimSun, "Noto Serif SC", "Noto Serif CJK SC", "Songti TC", PMingLiU, MingLiU, "Noto Serif TC", "Noto Serif CJK TC";
-  --font-cjk-sans-fallback: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC";
   --font-body: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
   --font-heading: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
 }
@@ -75,8 +73,6 @@
     --search-mark-bg: oklch(0.45 0.1 85 / 0.5);
     --search-mark-color: oklch(0.92 0.08 90);
     --dash-bg: oklch(0.15 0.005 70);
-    --font-cjk-serif-fallback: "Songti SC", STSong, SimSun, "Noto Serif SC", "Noto Serif CJK SC", "Songti TC", PMingLiU, MingLiU, "Noto Serif TC", "Noto Serif CJK TC";
-    --font-cjk-sans-fallback: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC";
     --font-body: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
     --font-heading: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
 }
@@ -115,8 +111,6 @@
     --search-mark-bg: oklch(0.45 0.1 85 / 0.5);
     --search-mark-color: oklch(0.92 0.08 90);
     --dash-bg: oklch(0.15 0.005 70);
-    --font-cjk-serif-fallback: "Songti SC", STSong, SimSun, "Noto Serif SC", "Noto Serif CJK SC", "Songti TC", PMingLiU, MingLiU, "Noto Serif TC", "Noto Serif CJK TC";
-    --font-cjk-sans-fallback: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC";
     --font-body: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
     --font-heading: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
   }
