@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-26T02:02:48.000Z"
+generated_at = "2026-08-27T08:14:51.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -93,7 +93,7 @@ slug = "life"
 title = "Life"
 description_html = "<p>记录生活｡</p>"
 entry_count = 10
-recent_activity_label = "1m ago"
+recent_activity_label = "1d ago"
 recent_activity_iso = "2026-08-26T02:01:47.000Z"
 
 [[directory]]

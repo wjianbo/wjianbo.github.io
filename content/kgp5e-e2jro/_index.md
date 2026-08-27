@@ -2,6 +2,7 @@
 id: "pst_01kznsmm2pesqtshnq025a0ggg"
 title: "『一汁一菜でよいという提案』"
 date: "2026-08-10T12:16:26.000Z"
+updated: "2026-08-27T08:14:51.000Z"
 slug: "kgp5e-e2jro"
 type: "post"
 aliases:
@@ -9,7 +10,7 @@ aliases:
   - "/34itt/"
 format: "note"
 status: "published"
-visibility: "public"
+visibility: "latest_hidden"
 summary_text: "簡単なことを丁寧に"
 collections:
   - slug: "books"
