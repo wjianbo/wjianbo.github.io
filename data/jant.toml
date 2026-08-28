@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-28T12:22:55.000Z"
+generated_at = "2026-08-28T12:25:44.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -179,3 +179,12 @@ title = "Translations"
 entry_count = 1
 recent_activity_label = "Aug 1"
 recent_activity_iso = "2026-08-01T16:01:08.000Z"
+
+[[directory]]
+type = "collection"
+sequence = "11"
+slug = "human-observation"
+title = "人类观察日记"
+entry_count = 1
+recent_activity_label = "6m ago"
+recent_activity_iso = "2026-08-28T12:19:18.000Z"
