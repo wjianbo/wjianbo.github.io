@@ -14,12 +14,6 @@ visibility: "public"
 summary_text: "后知后觉的发现《金牌得主》已经出第二季了。目前可以在 YouTube 免费观看。"
 link_url: "https://youtube.com/playlist?list=PLfGRknL5vWcK2-9ljZ6-tbHf9QT1beQCa&si=pcJnwpJbR2owHlAo"
 rating: 5
-collections:
-  - slug: "now"
-    title: "Now"
-    collected_at: "2026-05-14T14:51:24.000Z"
-    position: 0
-    pinned_at: null
 media:
   - id: "med_01krjt2d29fvm8saktyfzefp9y"
     kind: "image"

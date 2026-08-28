@@ -13,11 +13,6 @@ status: "published"
 visibility: "public"
 summary_text: "最近在重温日剧《悠长假期》。"
 collections:
-  - slug: "now"
-    title: "Now"
-    collected_at: "2026-05-14T15:09:42.000Z"
-    position: 0
-    pinned_at: null
   - slug: "guitar"
     title: "Guitar"
     collected_at: "2026-05-17T01:57:00.000Z"
