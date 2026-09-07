@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 1
-generated_at = "2026-08-31T06:50:34.000Z"
+generated_at = "2026-09-07T16:05:41.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -20,8 +20,8 @@ theme_id = "tufte"
 default_theme_id = "tufte"
 font_theme_id = "tufte"
 theme_mode = "auto"
-page_size = 50
-archive_page_size = 50
+page_size = 25
+archive_page_size = 25
 rss_feed_limit = 50
 favicon_path = "/favicon.ico"
 apple_touch_icon_path = "/apple-touch-icon.png"
@@ -93,7 +93,7 @@ slug = "life"
 title = "Life"
 description_html = "<p>记录生活｡</p>"
 entry_count = 11
-recent_activity_label = "17h ago"
+recent_activity_label = "Aug 30"
 recent_activity_iso = "2026-08-30T13:37:23.000Z"
 
 [[directory]]
@@ -186,5 +186,5 @@ sequence = "11"
 slug = "human-observation"
 title = "人类观察日记"
 entry_count = 2
-recent_activity_label = "1d ago"
+recent_activity_label = "Aug 29"
 recent_activity_iso = "2026-08-29T10:35:16.000Z"

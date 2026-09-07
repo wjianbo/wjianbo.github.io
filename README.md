@@ -42,6 +42,24 @@ hugo --minify
 
 The output goes to the `public/` directory. Upload it to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.).
 
+## Feeds
+
+The feed addresses changed. Jant served them under `/feed`; Hugo serves them as `index.xml` inside each section:
+
+| Jant                 | This export               |
+| -------------------- | ------------------------- |
+| `/feed`              | `/featured/index.xml`     |
+| `/latest/feed`       | `/index.xml`              |
+| `/featured/feed`     | `/featured/index.xml`     |
+| `/archive/feed`      | `/archive/index.xml`      |
+| `/{collection}/feed` | `/{collection}/index.xml` |
+
+A reader who is already subscribed holds one of the old addresses, and a feed reader that gets a 404 stops delivering posts. `static/_redirects` maps every old address to its new one with a 301. Cloudflare Pages and Netlify read that file as published; on any other host, translate its rules into that host's redirect configuration before you point the domain here.
+
+Hugo's `aliases:` cannot cover this. An alias page redirects with a meta refresh and a script, and feed readers fetch XML without running either — only an HTTP redirect reaches them.
+
+The **Subscribe** entry in the site navigation points at `/featured/index.xml`. The exported site has no `/subscribe` page; that page belongs to the Jant runtime.
+
 ## Project structure
 
 ```
@@ -59,6 +77,7 @@ data/
   jant.toml               — Nav items, branding, display preferences, ordered collections directory
 themes/jant/              — Bundled Hugo theme (overrideable via layouts/ at the site root)
 static/                   — Copy files here to add them to the published site
+  _redirects              — Feed redirects (see Feeds above)
 ```
 
 ## Customizing
@@ -85,5 +104,6 @@ Safe to re-run; files already on disk are reused. Anything that fails to downloa
 
 - Each thread is a Hugo branch bundle. Replies live as nested leaf bundles with `build.render = "never"` so they do not produce standalone URLs; they render inside the thread page.
 - `/{reply-slug}/` URLs are preserved via `aliases:` on the root post, so old links still land on the right thread anchor.
+- Feed addresses are the exception: they move to `index.xml` and stay reachable only through `static/_redirects`. See [Feeds](#feeds).
 - Media is emitted under `static/media/{id}.ext` and referenced from a flat `media:` array on each post. When a storage provider has a configured public URL (R2/S3/local proxy), the exporter links to the provider URL instead of re-bundling the bytes.
 - Posts with `draft: true` in front matter are only built when you pass `--buildDrafts` to `hugo` / `hugo serve`.

@@ -3,7 +3,7 @@ title = "Jianbo"
 languageCode = "zh-hans"
 defaultContentLanguage = "zh-hans"
 theme = "jant"
-paginate = 50
+paginate = 25
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']
 
@@ -43,6 +43,6 @@ disableKinds = ['taxonomy', 'term']
   default_theme_id = "tufte"
   font_theme_id = "tufte"
   theme_mode = "auto"
-  page_size = 50
-  archive_page_size = 50
+  page_size = 25
+  archive_page_size = 25
   rss_feed_limit = 50
