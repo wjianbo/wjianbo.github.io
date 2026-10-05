@@ -4,6 +4,7 @@ date: "2026-05-29T22:31:23.000Z"
 updated: "2026-05-29T22:31:34.000Z"
 slug: "o9kok"
 type: "post"
+feed_id: "https://jianbo.jant.blog/o9kok"
 format: "note"
 status: "published"
 visibility: "latest_hidden"
@@ -24,8 +25,6 @@ media:
     original_name: "IMG_1602.jpg"
     mime_type: "image/jpeg"
     size: 398205
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kstxsxfpf27skjt90563ca2p.jpg"
 ---
 
 

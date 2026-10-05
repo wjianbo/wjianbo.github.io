@@ -12,6 +12,7 @@ status: "published"
 visibility: "public"
 summary_text: "你要改变一个人，总要付出点什么，最简单的就是超量工作。"
 quote_text: "你要改变一个人，总要付出点什么，最简单的就是超量工作。"
+weight: 1
 ---
 
 

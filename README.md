@@ -4,7 +4,7 @@ This is a static site exported from [Jant](https://github.com/jant-me/jant), rea
 
 ## Install Hugo
 
-This export targets Hugo **extended 0.160.1+**.
+This export targets Hugo **extended 0.147.7+**.
 
 **macOS (Homebrew):**
 
@@ -42,6 +42,24 @@ hugo --minify
 
 The output goes to the `public/` directory. Upload it to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.).
 
+## Deploy to Cloudflare Workers
+
+`wrangler.jsonc` at the root is the deploy config: it names the Worker, runs `hugo --gc --minify`, and points the upload at `public/`. Connect this repository to Cloudflare Workers Builds and leave the commands Cloudflare offers as they are:
+
+| Field           | Value                          |
+| --------------- | ------------------------------ |
+| Build command   | leave empty                    |
+| Deploy command  | `npx wrangler deploy`          |
+| Version command | `npx wrangler versions upload` |
+
+The build belongs to `wrangler.jsonc` rather than to that field: Workers Builds reads a `package.json` to detect a framework, a Hugo site has none, and an empty build command deploys a `public/` that was never built. Filling the field in as well makes Hugo run twice.
+
+Check one thing before the first deploy: `name` in `wrangler.jsonc` has to match the Worker's name in the Cloudflare dashboard. Workers Builds fails the build when they differ, and a deploy run by hand under another name goes to another Worker. A Worker imported from a repository is named after the repository, so an export pushed by GitHub Sync uses the repository name. A downloaded export has no repository and uses the name GitHub Sync suggests when it creates one for this site. If the Worker is named something else, change `name` to match — Cloudflare names each build token `<worker-name> build token`, so the token list is one place to read it.
+
+Jant writes `wrangler.jsonc` once and never overwrites it, so a corrected name survives later syncs.
+
+`static/_redirects` needs no configuration here. Hugo copies it to `public/_redirects` and Workers applies the rules as published.
+
 ## Feeds
 
 The feed addresses changed. Jant served them under `/feed`; Hugo serves them as `index.xml` inside each section:
@@ -58,12 +76,15 @@ A reader who is already subscribed holds one of the old addresses, and a feed re
 
 Hugo's `aliases:` cannot cover this. An alias page redirects with a meta refresh and a script, and feed readers fetch XML without running either — only an HTTP redirect reaches them.
 
+Feed entries keep the IDs Jant gave them, so feed readers don't show old posts again. Each root post stores its ID in `feed_id`: the post's address on Jant, which is not its page URL here. Don't change `feed_id`, or feed readers show that post again. A post you add here without one uses its page URL.
+
 The **Subscribe** entry in the site navigation points at `/featured/index.xml`. The exported site has no `/subscribe` page; that page belongs to the Jant runtime.
 
 ## Project structure
 
 ```
 hugo.toml                 — Site configuration (baseURL, title, theme, params)
+wrangler.jsonc            — Cloudflare Workers deploy config (see Deploy above)
 content/
   _index.md               — Home section
   archive/_index.md       — Archive section
@@ -86,7 +107,7 @@ static/                   — Copy files here to add them to the published site
 - **Jant metadata** — `data/jant.toml` drives nav and the collections directory, and is preserved across round-trip import.
 - **Styles** — edit `themes/jant/static/main.css`, or drop a `static/main.css` at the site root to override.
 - **Templates** — add files under `layouts/` at the site root to override the bundled theme.
-- **Debugging** — from a Jant site project, run `npx jant site export --directory ./my-site`, then `cd my-site && hugo serve`.
+- **Debugging** — from a Jant site project, run `npx jant site export --url <site-url> --output ./my-site`, then `cd my-site && hugo serve`.
 
 ## Fetching media locally
 

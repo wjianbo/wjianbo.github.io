@@ -5,6 +5,7 @@ slug: "h4oko"
 type: "post"
 aliases:
   - "/dx9qu/"
+feed_id: "https://jianbo.jant.blog/h4oko"
 format: "quote"
 status: "published"
 visibility: "public"

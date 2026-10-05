@@ -8,6 +8,7 @@ aliases:
   - "/npv1c/"
   - "/5tsai/"
   - "/6cxb1/"
+feed_id: "https://jianbo.jant.blog/9u4pz"
 format: "note"
 status: "published"
 visibility: "public"

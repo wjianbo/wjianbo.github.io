@@ -8,6 +8,7 @@ aliases:
   - "/k5qc7/"
   - "/7kilg/"
   - "/sqnoi/"
+feed_id: "https://jianbo.jant.blog/7vwhq"
 format: "note"
 status: "published"
 visibility: "public"

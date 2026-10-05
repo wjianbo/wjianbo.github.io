@@ -22,8 +22,8 @@ media:
     original_name: "IMG_1973.jpg"
     mime_type: "image/jpeg"
     size: 253120
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kx5f8m3vfk6rqyxe45chw7hx.jpg"
+created: "2026-07-10T07:36:53.000Z"
+weight: 1
 quiet_reply: true
 ---
 

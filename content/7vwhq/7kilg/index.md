@@ -10,6 +10,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "这天在同一家医院出生了十个宝宝。"
+weight: 2
 ---
 
 这天在同一家医院出生了十个宝宝。

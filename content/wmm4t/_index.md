@@ -4,6 +4,7 @@ date: "2026-05-26T13:05:35.000Z"
 updated: "2026-05-26T13:06:04.000Z"
 slug: "wmm4t"
 type: "post"
+feed_id: "https://jianbo.jant.blog/wmm4t"
 format: "note"
 status: "published"
 visibility: "public"
@@ -18,8 +19,6 @@ media:
     size: 2703
     summary: "粗略总结一下， Life Note App Store 页面 这个项目其实已经远远超过“随手做个小工具”的规模了。大概有这些阶段：最初只是一个“轻量 life log”想法想做比 Todo 更轻、比日…"
     chars: 1258
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01ksj67zapf27skfqxz14ma29v.md"
 ---
 
 我让 ChatGPT 总结了一下 [life note app](https://apps.apple.com/jp/app/life-note-daily-log/id6763540947) 的开发过程。

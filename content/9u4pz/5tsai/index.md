@@ -10,6 +10,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "我杜撰了一个结局：南答应嫁给杉崎，婚礼和濑名的比赛在同一天。南逃婚，去找濑名。"
+weight: 2
 ---
 
 我杜撰了一个结局：南答应嫁给杉崎，婚礼和濑名的比赛在同一天。南逃婚，去找濑名。

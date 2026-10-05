@@ -3,7 +3,6 @@ title = "Jianbo"
 languageCode = "zh-hans"
 defaultContentLanguage = "zh-hans"
 theme = "jant"
-paginate = 25
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']
 

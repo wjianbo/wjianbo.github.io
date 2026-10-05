@@ -7,6 +7,7 @@ type: "post"
 aliases:
   - "/svkfi/"
   - "/w0064/"
+feed_id: "https://jianbo.jant.blog/wang-qiu-bi-ji"
 format: "note"
 status: "published"
 visibility: "public"

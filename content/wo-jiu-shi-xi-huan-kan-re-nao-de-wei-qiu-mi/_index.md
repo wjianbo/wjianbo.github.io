@@ -4,10 +4,12 @@ title: "我就是喜欢看热闹的伪球迷"
 date: "2026-06-14T22:35:59.000Z"
 slug: "wo-jiu-shi-xi-huan-kan-re-nao-de-wei-qiu-mi"
 type: "post"
+feed_id: "https://jianbo.jant.blog/wo-jiu-shi-xi-huan-kan-re-nao-de-wei-qiu-mi"
 format: "note"
 status: "published"
 visibility: "public"
 summary_text: "我就是喜欢看热闹的伪球迷。 没有精力，也没有兴趣把自己训练成真正的球迷。平时不追联赛，不研究转会，不关心阵型，也记不住太多球员的名字。 但世界杯来了，我还是愿意看一看。 因为世界杯看的不只是足球，而是一整套社会事件。 联赛像长期追剧，需要知道俱乐部、球员、转会、教练、战术，门槛其实不低。世界杯就简单很多：哪个国家打哪个国家，谁进球了，谁赢了，谁哭了，谁爆冷了。"
+truncated: true
 collections:
   - slug: "essays"
     title: "Essays"

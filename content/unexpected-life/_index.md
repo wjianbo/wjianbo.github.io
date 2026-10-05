@@ -5,10 +5,12 @@ date: "2026-06-09T15:31:41.000Z"
 updated: "2026-06-10T00:38:53.000Z"
 slug: "unexpected-life"
 type: "post"
+feed_id: "https://jianbo.jant.blog/unexpected-life"
 format: "note"
 status: "published"
 visibility: "public"
 summary_text: "2006 年，我还在读大学。 如果有人告诉我，二十年后我会生活在日本，做软件开发，我大概不会相信。 不过仔细想想，那时候的我不会相信的事情还有很多。 我不会想到自己会成为译者。 不会想到自己会当老师。"
+truncated: true
 featured_at: "2026-06-09T15:34:51.000Z"
 featured_post_ids:
   - "pst_01ktpg5jgse48arszc549xyh09"

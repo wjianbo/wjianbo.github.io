@@ -5,6 +5,7 @@ date: "2026-06-03T01:25:23.000Z"
 updated: "2026-06-03T02:01:33.000Z"
 slug: "wu-yue-xiao-jie"
 type: "post"
+feed_id: "https://jianbo.jant.blog/wu-yue-xiao-jie"
 format: "note"
 status: "published"
 visibility: "public"
@@ -26,8 +27,6 @@ media:
     original_name: "9378E5AC-2085-4355-9E4A-66EE43525A16.jpg"
     mime_type: "image/jpeg"
     size: 599530
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kt5kdqkdenb86r17c6r3ccwf.jpg"
 ---
 
 家里添了新的成员。

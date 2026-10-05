@@ -3,6 +3,7 @@ id: "pst_01kstzdjbtf27skjwmjfvhd3wc"
 date: "2026-05-29T22:59:28.000Z"
 slug: "jm3hn"
 type: "post"
+feed_id: "https://jianbo.jant.blog/jm3hn"
 format: "note"
 status: "published"
 visibility: "latest_hidden"
@@ -23,8 +24,6 @@ media:
     original_name: "IMG_1606.jpg"
     mime_type: "image/jpeg"
     size: 336226
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kstzd6dpf27skjwbbmtztdfc.jpg"
 ---
 
 

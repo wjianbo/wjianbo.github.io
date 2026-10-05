@@ -12,6 +12,7 @@ status: "published"
 visibility: "latest_hidden"
 summary_text: "作る人が食べる人のことを考えている。料理する事はすでに愛している。食べる人はすでに愛されています。"
 quote_text: "作る人が食べる人のことを考えている。料理する事はすでに愛している。食べる人はすでに愛されています。"
+weight: 2
 ---
 
 

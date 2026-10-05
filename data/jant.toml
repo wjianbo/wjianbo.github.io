@@ -1,12 +1,13 @@
 format = "jant-site"
-version = 1
-generated_at = "2026-09-07T16:05:41.000Z"
+version = 2
+generated_at = "2026-10-05T10:55:30.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
 multilingual_enabled = false
 additional_languages = ""
 main_rss_feed = "featured"
+time_zone = "Asia/Tokyo"
 archive_default_layout = "list"
 public_api_enabled = true
 rss_feeds_enabled = true
@@ -30,6 +31,13 @@ site_footer_markdown = "愿你免于痛苦 •愿你健康 •愿你快乐 •�
 
 [[nav]]
 type = "system"
+label = "Settings"
+url = "/settings"
+system_key = "settings"
+placement = "more"
+
+[[nav]]
+type = "system"
 label = "Latest"
 url = "/"
 system_key = "latest"
@@ -48,6 +56,7 @@ label = "Now"
 url = "/now"
 system_key = ""
 placement = "header"
+custom_label = "Now"
 
 [[nav]]
 type = "system"
@@ -62,6 +71,7 @@ label = "About"
 url = "/about"
 system_key = ""
 placement = "header"
+custom_label = "About"
 
 [[nav]]
 type = "system"
@@ -148,9 +158,9 @@ type = "collection"
 sequence = "07"
 slug = "wishlist"
 title = "Wishlist"
-entry_count = 1
-recent_activity_label = "May 22"
-recent_activity_iso = "2026-05-22T14:04:07.000Z"
+entry_count = 2
+recent_activity_label = "1m ago"
+recent_activity_iso = "2026-10-05T10:55:30.000Z"
 
 [[directory]]
 type = "collection"

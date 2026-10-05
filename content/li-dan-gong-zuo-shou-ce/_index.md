@@ -7,6 +7,7 @@ slug: "li-dan-gong-zuo-shou-ce"
 type: "post"
 aliases:
   - "/oz6bv/"
+feed_id: "https://jianbo.jant.blog/li-dan-gong-zuo-shou-ce"
 format: "note"
 status: "published"
 visibility: "public"

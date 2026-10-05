@@ -13,6 +13,7 @@ visibility: "public"
 summary_text: "我寧可下地獄而不想上天堂，地獄比較多問題讓我解決，我在地獄可以幫助更多人。"
 source_name: "達賴喇嘛"
 quote_text: "我寧可下地獄而不想上天堂，地獄比較多問題讓我解決，我在地獄可以幫助更多人。"
+weight: 2
 ---
 
 

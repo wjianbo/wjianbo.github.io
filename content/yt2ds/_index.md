@@ -12,6 +12,7 @@ aliases:
   - "/e51jz/"
   - "/lceh4/"
   - "/ckhte/"
+feed_id: "https://jianbo.jant.blog/yt2ds"
 format: "note"
 status: "published"
 visibility: "public"

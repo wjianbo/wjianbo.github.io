@@ -4,6 +4,7 @@ date: "2026-06-17T17:21:00.000Z"
 updated: "2026-06-18T17:28:16.000Z"
 slug: "31g90"
 type: "post"
+feed_id: "https://jianbo.jant.blog/31g90"
 format: "note"
 status: "published"
 visibility: "public"
@@ -14,6 +15,7 @@ collections:
     collected_at: "2026-06-18T17:21:11.000Z"
     position: 0
     pinned_at: null
+created: "2026-06-18T17:21:11.000Z"
 ---
 
 满月健诊。晶说医生有点敷衍。

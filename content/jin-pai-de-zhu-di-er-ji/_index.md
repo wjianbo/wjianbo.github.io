@@ -8,6 +8,7 @@ type: "post"
 aliases:
   - "/niob5/"
   - "/39fu8/"
+feed_id: "https://jianbo.jant.blog/jin-pai-de-zhu-di-er-ji"
 format: "link"
 status: "published"
 visibility: "public"
@@ -25,8 +26,6 @@ media:
     original_name: "IMG_1316.jpg"
     mime_type: "image/jpeg"
     size: 712940
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01krjt2d29fvm8saktyfzefp9y.jpg"
 ---
 
 后知后觉的发现《金牌得主》已经出第二季了。目前可以在 YouTube 免费观看。

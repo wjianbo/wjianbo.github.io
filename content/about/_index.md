@@ -5,10 +5,12 @@ date: "2026-05-14T06:28:28.000Z"
 updated: "2026-06-08T17:32:32.000Z"
 slug: "about"
 type: "post"
+feed_id: "https://jianbo.jant.blog/about"
 format: "note"
 status: "published"
 visibility: "latest_hidden"
 summary_text: "你好👋 我是王健波。 学过日语，做过翻译，现在靠写代码谋生。 我住在日本，喜欢读书、写作、跑步，也喜欢做一些自己觉得有意思的小软件。 这里没有明确的主题。"
+truncated: true
 ---
 
 你好👋

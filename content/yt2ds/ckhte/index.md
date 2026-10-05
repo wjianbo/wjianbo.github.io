@@ -13,6 +13,7 @@ visibility: "public"
 summary_text: "若事尚可為， 云何不歡喜？ 若已不濟事， 憂惱有何益？"
 source_name: "《入菩薩行論》"
 quote_text: "若事尚可為，\n云何不歡喜？\n若已不濟事，\n憂惱有何益？"
+weight: 6
 ---
 
 

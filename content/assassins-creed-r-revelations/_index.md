@@ -5,6 +5,7 @@ date: "2026-05-22T14:04:07.000Z"
 updated: "2026-05-22T14:17:50.000Z"
 slug: "assassins-creed-r-revelations"
 type: "post"
+feed_id: "https://jianbo.jant.blog/assassins-creed-r-revelations"
 format: "link"
 status: "published"
 visibility: "latest_hidden"
@@ -26,8 +27,6 @@ media:
     original_name: "IMG_1537.jpg"
     mime_type: "image/jpeg"
     size: 39443
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01ks80s9anexzv2e97bh5783av.jpg"
 ---
 
 

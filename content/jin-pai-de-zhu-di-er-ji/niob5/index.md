@@ -9,6 +9,7 @@ build:
 format: "note"
 status: "published"
 visibility: "public"
+weight: 1
 quiet_reply: true
 ---
 

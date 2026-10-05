@@ -10,6 +10,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "找到插曲Close To You 的簡單版吉他指彈TAB譜"
+weight: 3
 ---
 
 找到插曲Close To You 的簡單版吉他指彈TAB譜

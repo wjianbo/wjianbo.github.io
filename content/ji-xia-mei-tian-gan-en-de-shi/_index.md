@@ -7,6 +7,7 @@ slug: "ji-xia-mei-tian-gan-en-de-shi"
 type: "post"
 aliases:
   - "/j5pr8/"
+feed_id: "https://jianbo.jant.blog/ji-xia-mei-tian-gan-en-de-shi"
 format: "note"
 status: "published"
 visibility: "public"

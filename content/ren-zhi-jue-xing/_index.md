@@ -7,6 +7,7 @@ type: "post"
 aliases:
   - "/ep41u/"
   - "/lakgn/"
+feed_id: "https://jianbo.jant.blog/ren-zhi-jue-xing"
 format: "note"
 status: "published"
 visibility: "public"

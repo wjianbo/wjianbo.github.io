@@ -3,6 +3,7 @@ id: "pst_01kym8j5wefq9srdzq1r85vcpn"
 date: "2026-07-28T11:43:04.000Z"
 slug: "6rqof"
 type: "post"
+feed_id: "https://jianbo.jant.blog/6rqof"
 format: "note"
 status: "published"
 visibility: "public"
@@ -18,8 +19,6 @@ media:
     original_name: "BA11FF57-C783-49E0-9D0D-EC57DE45F068.jpg"
     mime_type: "image/jpeg"
     size: 724986
-    provider: "s3"
-    storage_key: "media/sit_01krhh9k99f24sfm8q6mdqdtsn/files/med_01kym8g57gfq9srdzac9wjv0x3.jpg"
 ---
 
 看完《银河的一票》，我愿称之为一部政治童话。

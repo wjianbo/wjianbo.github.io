@@ -5,10 +5,12 @@ date: "2026-08-04T22:04:41.000Z"
 updated: "2026-08-04T22:51:06.000Z"
 slug: "baki"
 type: "post"
+feed_id: "https://jianbo.jant.blog/baki"
 format: "note"
 status: "published"
 visibility: "public"
 summary_text: "看完《刃牙道：无敌武士》，我很向往那种沉迷于一件事的境界。 涉川刚气问本部以藏： “你一天练多久？” 本部沉默片刻，回答：“一天有几次。” “一天只练几次吗？”"
+truncated: true
 collections:
   - slug: "essays"
     title: "Essays"

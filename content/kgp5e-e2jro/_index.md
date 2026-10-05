@@ -8,6 +8,7 @@ type: "post"
 aliases:
   - "/1oe4i/"
   - "/34itt/"
+feed_id: "https://jianbo.jant.blog/kgp5e-e2jro"
 format: "note"
 status: "published"
 visibility: "latest_hidden"
