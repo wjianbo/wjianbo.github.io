@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 2
-generated_at = "2026-10-05T10:55:30.000Z"
+generated_at = "2026-10-05T11:00:23.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -159,7 +159,7 @@ sequence = "07"
 slug = "wishlist"
 title = "Wishlist"
 entry_count = 2
-recent_activity_label = "1m ago"
+recent_activity_label = "4m ago"
 recent_activity_iso = "2026-10-05T10:55:30.000Z"
 
 [[directory]]
