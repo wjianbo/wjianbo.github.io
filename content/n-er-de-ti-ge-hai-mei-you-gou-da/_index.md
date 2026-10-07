@@ -16,6 +16,11 @@ collections:
     collected_at: "2026-10-07T14:10:10.000Z"
     position: 0
     pinned_at: null
+  - slug: "jiu-bi-ji-da-lao"
+    title: "旧笔记打捞"
+    collected_at: "2026-10-07T14:11:11.000Z"
+    position: 1
+    pinned_at: null
 ---
 
 看到草地中间一对父女和一只狗。
