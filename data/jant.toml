@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 2
-generated_at = "2026-10-08T03:47:37.000Z"
+generated_at = "2026-10-09T12:04:07.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -158,9 +158,9 @@ type = "collection"
 sequence = "07"
 slug = "wishlist"
 title = "Wishlist"
-entry_count = 2
-recent_activity_label = "2d ago"
-recent_activity_iso = "2026-10-05T10:55:30.000Z"
+entry_count = 3
+recent_activity_label = "1m ago"
+recent_activity_iso = "2026-10-09T12:04:07.000Z"
 
 [[directory]]
 type = "collection"
@@ -205,7 +205,7 @@ sequence = "12"
 slug = "jiu-bi-ji-da-lao"
 title = "旧笔记打捞"
 entry_count = 0
-recent_activity_label = "14h ago"
+recent_activity_label = "1d ago"
 recent_activity_iso = "2026-10-07T13:31:28.000Z"
 
 [[directory]]
@@ -214,5 +214,5 @@ sequence = "13"
 slug = "shi-pu"
 title = "食谱"
 entry_count = 0
-recent_activity_label = "1m ago"
+recent_activity_label = "1d ago"
 recent_activity_iso = "2026-10-08T03:47:20.000Z"
