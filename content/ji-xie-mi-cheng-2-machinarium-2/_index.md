@@ -2,6 +2,7 @@
 id: "pst_01m4g8s5q2e8d82465tch67je5"
 title: "机械迷城2 (Machinarium 2)"
 date: "2026-10-09T12:04:07.000Z"
+updated: "2026-10-09T12:04:30.000Z"
 slug: "ji-xie-mi-cheng-2-machinarium-2"
 type: "post"
 feed_id: "https://jianbo.jant.blog/ji-xie-mi-cheng-2-machinarium-2"
