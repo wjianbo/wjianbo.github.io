@@ -37,6 +37,8 @@
   --site-reading-quote: oklch(0.36 0.008 55);
   --font-body: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
   --font-heading: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Source Serif 4", var(--font-cjk-serif-fallback), ui-serif, serif;
+  --type-heading-weight: var(--fw-regular);
+  --type-display-weight: var(--fw-regular);
 }
 :root[data-theme-mode="dark"] {
   color-scheme: dark;

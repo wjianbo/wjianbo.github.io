@@ -17,11 +17,12 @@
    * otherwise drop the text to the OS last-resort font.
    */
   --font-cjk-serif-fallback:
-    "Songti SC", STSong, SimSun, "Noto Serif SC", "Noto Serif CJK SC",
-    "Songti TC", PMingLiU, MingLiU, "Noto Serif TC", "Noto Serif CJK TC",
-    "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", YuMincho,
-    "Noto Serif JP", "Noto Serif CJK JP", "MS PMincho", "MS Mincho", Batang,
-    "Noto Serif KR", "Noto Serif CJK KR", NanumMyeongjo;
+    "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC",
+    STSong, SimSun, "Songti TC", "Noto Serif TC", "Noto Serif CJK TC",
+    "Source Han Serif TC", PMingLiU, MingLiU, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "Yu Mincho", YuMincho, "Noto Serif JP",
+    "Noto Serif CJK JP", "MS PMincho", "MS Mincho", Batang, "Noto Serif KR",
+    "Noto Serif CJK KR", NanumMyeongjo;
   --font-cjk-sans-fallback:
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
     "Noto Sans CJK SC", "PingFang TC", "Hiragino Sans CNS",
@@ -97,8 +98,14 @@
   /* Content reading tokens — desktop maps to core scale,
      mobile overrides below cap sizes for small screens.
      --type-content-scale uniformly scales all content sizes
-     without affecting UI controls. */
-  --type-content-scale: 0.8;
+     without affecting UI controls.
+
+     0.81 puts the body at 17px (21px × 0.81). Latin reading surfaces run
+     17–21 (Ghost 17–19, Substack 20, Medium 21); Chinese ones settle on 17
+     (sspai, Apple), since a Han glyph fills its em where Latin lowercase
+     fills half, so the same px reads a size larger. 18 was tried and read
+     as big on a 13-inch laptop. Titles and headings keep their ratios. */
+  --type-content-scale: 0.81;
   --type-content-display: calc(var(--type-display) * var(--type-content-scale));
   --type-content-title: calc(var(--type-title) * var(--type-content-scale));
   --type-content-subtitle: calc(
@@ -126,12 +133,25 @@
   --type-thread-context-meta: var(--type-sm);
   --feed-note-title-size: calc(var(--type-content-body) * 1.36);
   --feed-note-title-leading: var(--type-heading-leading);
+  /*
+   * Reading rhythm. A page in Chinese, Japanese or Korean raises both
+   * leadings (`getCjkFontCssVariables` in ui/font-themes.ts): Han glyphs fill
+   * the em box, so the same line-height packs CJK lines tighter than Latin.
+   */
   --type-body-leading: 1.7;
   --type-display-leading: 1.15;
-  --type-heading-leading: 1.15;
-  --type-heading-weight: var(--fw-medium);
+  --type-heading-leading: 1.2;
+  /*
+   * Semibold, not medium: a heading has to outweigh bold body text, and the
+   * Latin faces with a 500 (New York, Literata, Source Sans) would step up
+   * only half a weight. A page in Chinese, Japanese or Korean sets both
+   * weights to medium instead (`getCjkFontCssVariables` in
+   * ui/font-themes.ts): its serif faces have no 500 or 600 and would turn
+   * semibold into Bold. Tufte opts back out to Regular, its own look.
+   */
+  --type-heading-weight: var(--fw-semibold);
   --type-heading-tracking: 0;
-  --type-display-weight: var(--fw-medium);
+  --type-display-weight: var(--fw-semibold);
   --type-display-tracking: 0;
   --type-label-weight: var(--fw-medium);
   --type-label-tracking: 0.08em;
@@ -257,6 +277,10 @@
      it: hover states in navigation and menus, cards in the feed, code
      blocks. */
   --site-subtle-bg: var(--accent);
+  /* Behind a linked site's icon. Nothing on a light page; on a dark one a
+     light tile, because many icons are a black mark on transparency and
+     would vanish into the page. */
+  --site-link-icon-backdrop: transparent;
   --site-text-primary: var(--foreground);
   --site-text-secondary: var(--muted-foreground);
   --site-reading-title: color-mix(
@@ -329,11 +353,15 @@
     var(--site-reading-heading) 86%,
     var(--site-reading-body)
   );
+  /* Fills for blocks inside authored text are tints over transparent, never
+     mixes with `--site-page-bg`. On the page the two render the same pixel,
+     but text is also set on other paper: the composer is a raised sheet, and a
+     fill mixed with the page shows there as a dark patch or not at all. */
   --site-code-bg: color-mix(in srgb, var(--site-reading-meta) 12%, transparent);
   --site-code-block-bg: color-mix(
     in srgb,
-    var(--site-page-bg) 94%,
-    var(--site-subtle-bg)
+    var(--site-subtle-bg) 6%,
+    transparent
   );
   --site-code-block-border: color-mix(
     in srgb,
@@ -359,7 +387,7 @@
   --site-blockquote-bg: color-mix(
     in srgb,
     var(--site-feed-quote-tint) 62%,
-    var(--site-page-bg)
+    transparent
   );
   --site-blockquote-text: color-mix(
     in oklch,
@@ -369,7 +397,7 @@
   --site-summary-blockquote-bg: color-mix(
     in srgb,
     var(--site-feed-quote-tint) 42%,
-    var(--site-page-bg)
+    transparent
   );
   --site-reading-blockquote-rail: color-mix(
     in srgb,
@@ -379,7 +407,7 @@
   --site-reading-blockquote-bg: color-mix(
     in srgb,
     var(--site-accent) 6%,
-    var(--site-page-bg)
+    transparent
   );
   --site-thread-context-bg: color-mix(
     in srgb,
@@ -431,26 +459,6 @@
     var(--site-text-secondary) 72%,
     var(--compose-paper-bg)
   );
-  --compose-blockquote-rail: color-mix(
-    in srgb,
-    var(--site-accent) 24%,
-    var(--compose-control-border)
-  );
-  --compose-blockquote-bg: color-mix(
-    in srgb,
-    var(--compose-control-bg) 56%,
-    var(--compose-paper-bg)
-  );
-  --compose-blockquote-bg-focus: color-mix(
-    in srgb,
-    var(--compose-control-bg-strong) 70%,
-    var(--compose-paper-bg)
-  );
-  --compose-blockquote-text: color-mix(
-    in srgb,
-    var(--site-text-primary) 88%,
-    var(--site-text-secondary)
-  );
   --compose-floating-bg: color-mix(
     in srgb,
     var(--compose-paper-bg) 94%,
@@ -460,6 +468,11 @@
   /* Search highlight */
   --site-search-mark-bg: oklch(0.92 0.14 90 / 0.55);
   --site-search-mark-color: oklch(0.35 0.09 70);
+
+  /* Highlighted text in posts (`==text==`). Follows each theme's search
+     colors until a theme sets it, and every theme sets those on :root. */
+  --site-highlight-bg: var(--site-search-mark-bg);
+  --site-highlight-color: var(--site-search-mark-color);
 
   /* Admin */
   --dash-bg: oklch(0.97 0.005 80);
@@ -583,6 +596,11 @@
       var(--site-raised-bg) 78%,
       var(--foreground)
     );
+    --site-link-icon-backdrop: color-mix(
+      in oklab,
+      var(--foreground) 88%,
+      transparent
+    );
   }
 }
 
@@ -629,19 +647,29 @@
     var(--site-raised-bg) 78%,
     var(--foreground)
   );
+  --site-link-icon-backdrop: color-mix(
+    in oklab,
+    var(--foreground) 88%,
+    transparent
+  );
 }
 
 @media (max-width: 699px), (hover: none) and (pointer: coarse) {
   :root {
     /* Content layer — tighter scale for mobile reading.
+       Body keeps the desktop size; the headings sit closer to it than
+       desktop's 2.7 / 2.1 / 1.8 rem so a title fits a phone line.
        Ratio ≈ 1.88 : 1.42 : 1.15 : 1 (display:title:subtitle:body).
-       At 15px root × 0.8 content-scale: 29.4 / 22.2 / 18 / 15.6px.
+       At 15px root × 0.81 content-scale: 32 / 24.2 / 19.6 / 17px.
        Body is floored to a 16px minimum below (max()) for readability;
        the floor still yields to calc() when the user zooms the root up. */
-    --type-content-display: calc(2.45rem * var(--type-content-scale));
-    --type-content-title: calc(1.85rem * var(--type-content-scale));
-    --type-content-subtitle: calc(1.5rem * var(--type-content-scale));
-    --type-content-body: max(16px, calc(1.3rem * var(--type-content-scale)));
+    --type-content-display: calc(2.63rem * var(--type-content-scale));
+    --type-content-title: calc(1.99rem * var(--type-content-scale));
+    --type-content-subtitle: calc(1.61rem * var(--type-content-scale));
+    --type-content-body: max(
+      16px,
+      calc(var(--type-body) * var(--type-content-scale))
+    );
 
     /* UI layer — pixel floors for touch targets */
     --type-ui-title: max(16px, var(--type-secondary));

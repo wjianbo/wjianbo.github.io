@@ -9,6 +9,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "放松，放松，放松。 击球 在身前击球。侧身，侧身，侧身。盯球，盯球，盯球。 发球 稳定抛球，尽量每次抛到固定的位置。手臂充分伸展，在高点击球。保持侧身，直到击球结束。"
+truncated: true
 ---
 
 放松，放松，放松。
