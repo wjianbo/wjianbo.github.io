@@ -10,6 +10,7 @@ format: "note"
 status: "published"
 visibility: "public"
 summary_text: "暂时把妻女送回国住一段时间，开启短暂的异国独居生活。一下子多出大把的独处时间，再也没有借口不认真地写日记。先理一下要做的事。最重要的是准备申请保育园。先把附近的几家了解一遍。坚持自己做饭。保持家中整洁。主动社交，比如打网球，参加读书会活动。练琴。 要追的动漫： 海贼王冰之城壁间谍过家家 要读的书： 最后一次相遇，我们只谈喜悦一汁一菜"
+truncated: true
 collections:
   - slug: "now"
     title: "Now"
