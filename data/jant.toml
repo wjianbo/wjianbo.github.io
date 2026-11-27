@@ -1,6 +1,6 @@
 format = "jant-site"
 version = 4
-generated_at = "2026-11-26T06:19:51.000Z"
+generated_at = "2026-11-27T01:02:53.000Z"
 site_name = "Jianbo"
 site_description = ""
 site_language = "zh-Hans"
@@ -132,7 +132,7 @@ slug = "guitar"
 title = "Guitar"
 description_html = "<p>收集一些吉他谱</p>"
 entry_count = 6
-recent_activity_label = "5d ago"
+recent_activity_label = "6d ago"
 recent_activity_iso = "2026-11-20T14:33:28.000Z"
 
 [[directory]]
@@ -187,7 +187,7 @@ sequence = "10"
 slug = "translations"
 title = "Translations"
 entry_count = 2
-recent_activity_label = "1h ago"
+recent_activity_label = "19h ago"
 recent_activity_iso = "2026-11-26T05:10:39.000Z"
 
 [[directory]]
